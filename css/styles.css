@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "tommy-regular";
+  src: url(/assets/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+@font-face {
+  font-family: "tommy-bold";
+  src: url(/assets/fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf);
+}
+@font-face {
+  font-family: "tommy-black";
+  src: url(/assets/fonts/MADE\ TOMMY\ Black_PERSONAL\ USE.otf);
+}
+
+a:visited,
+a:link,
+p {
+  font-family: "tommy-regular";
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.row {
+  max-width: 100%;
+  --bs-gutter-x: 0;
+}
+
+h2 {
+  font-size: 5.5em;
+  font-family: "tommy-black";
+}
+
+:root {
+  --primary: #f96d00;
+  --secondary: #084260;
+  --tertiary: #86b13e;
+  --tertiaryDarker: #789e36;
+  --gray: #7c7b7b;
+  --darkGray: #535353;
+  --lightGray: #eeedee;
+  --labels: #949494;
+  --offWhite: #f9f9f9;
+  --whatsappGreen: #51cd5d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav {
+  box-shadow: 0px 1px 10px #00000071;
+}
+
+.round-btn {
+  border-radius: 10rem;
+}
+
+.navbar-brand {
+  /* padding-bottom: 1rem; */
+  width: 7%;
+}
+
+nav li {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+nav li a:link,
+nav li a:visited {
+  color: var(--gray);
+  margin: 0 2rem;
+  position: relative;
+  padding-bottom: 2rem;
+  font-size: 1.1em;
+}
+
+nav li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background-color: var(--primary);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+nav li a:hover::before {
+  opacity: 1;
+}
+
+nav li a.active:before {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.contact-btn:link,
+.contact-btn:visited {
+  background-color: var(--secondary);
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  color: var(--offWhite);
+}
+
+header {
+  background: url("/assets/img/BANNER-INICIO-WEB-MARIBEL.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--offWhite);
+}
+
+header .row {
+  padding: 8rem 0;
+}
+
+header h1 {
+  font-family: "tommy-bold";
+  font-size: 3.5em;
+}
+
+header h1 span {
+  font-size: 1.3em;
+}
+
+header p {
+  font-size: 2.3em;
+}
+
+.book-now-btn:link,
+.book-now-btn:visited {
+  color: var(--offWhite);
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  background: var(--tertiary);
+  font-size: 1.2em;
+  transition: background 0.1s ease-in-out;
+}
+
+.book-now-btn:hover {
+  background: var(--tertiaryDarker);
+}
+.section-message {
+  background: url("/assets/img/FONDO-FOTO-MARIBEL.jpg");
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7rem 0;
+}
+
+.message-container {
+  padding-left: 4rem;
+}
+.section-message p {
+  font-family: "tommy-bold";
+}
+
+.section-message p:first-of-type {
+  color: var(--secondary);
+  font-size: 2.8em;
+  line-height: 4.5rem;
+}
+
+.section-message p:first-of-type span {
+  font-size: 1.8em;
+  color: var(--tertiary);
+}
+
+.section-message p:nth-of-type(2) {
+  color: var(--darkGray);
+  font-size: 1.9em;
+  line-height: 1.8rem;
+}
+
+.section-message p:nth-of-type(2) span {
+  color: var(--primary);
+}
+
+.section-message p:nth-of-type(3) {
+  color: var(--primary);
+  font-size: 1.3em;
+}
+
+.text-me-btn:link,
+.text-me-btn:visited {
+  background: var(--whatsappGreen);
+  text-decoration: none;
+  color: var(--offWhite);
+  padding: 0.3rem 1rem;
+  align-self: flex-end;
+  margin: 1.5rem 7rem 0 0;
+}
+
+.section-cotization {
+  padding-bottom: 7rem;
+}
+.section-cotization h2 {
+  color: var(--primary);
+  padding-top: 4rem;
+}
+
+.section-cotization h3 {
+  color: var(--secondary);
+  font-family: "tommy-bold";
+  font-size: 3em;
+}
+
+.section-cotization p {
+  text-align: start;
+  color: var(--darkGray);
+}
+
+.section-perks {
+  background: var(--secondary);
+  padding: 7rem 0;
+}
+
+.section-perks h2 {
+  color: var(--offWhite);
+  background: var(--tertiary);
+  text-align: center;
+  padding: 0.3rem 5rem;
+}
+
+.section-perks img {
+  width: 50%;
+}
+
+.section-perks p {
+  font-family: "tommy-regular";
+  color: var(--offWhite);
+  font-size: 2em;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.section-perks p.perks-message {
+  font-family: "tommy-bold";
+  color: var(--offWhite);
+  font-size: 3em;
+  line-height: inherit;
+  width: 100%;
+  text-align: center;
+}
+
+.section-testimonial {
+  background: url("/assets/img/FONDO-SECCIÓN-TESTIMONIOS.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 0 2rem 0;
+}
+.section-testimonial h2 {
+  color: var(--offWhite);
+}
+
+.testimonial-bubble {
+  background: var(--offWhite);
+  border-radius: 2.5rem;
+  padding: 2rem;
+  color: var(--darkGray);
+  font-size: 1.3em;
+}
+
+.testimonial-bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: transparent;
+  width: 5rem;
+  height: 5rem;
+  bottom: 1%;
+  right: 93%;
+  border-radius: 50%;
+  box-shadow: inset -34px -19px 0px -10px var(--offWhite);
+  z-index: 9999999;
+}
+
+.testimonial-bubble img {
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  width: 30%;
+}
+
+.testimonial-author {
+  font-family: "tommy-bold";
+  color: var(--secondary);
+  text-align: center;
+  font-size: 4em;
+}
+
+.testimonial-link {
+  width: 5%;
+}
+.section-products {
+  padding: 4rem 0;
+}
+.section-products h2 {
+  color: var(--primary);
+  text-align: center;
+}
+.product {
+  margin-top: 3rem;
+}
+.product div {
+  border: 2px solid var(--tertiary);
+  border-radius: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product svg {
+  width: 70%;
+  padding: 2rem 0;
+}
+
+.product a:link,
+.product a:visited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--tertiary);
+  font-family: "tommy-bold";
+  font-size: 2em;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.product div,
+.product a {
+  transition: 0.2s ease-in;
+}
+
+.product path {
+  transition: 0.1s ease-in;
+}
+.product:hover path {
+  fill: var(--offWhite);
+}
+
+.product:hover div {
+  border-color: #083c55;
+  background-color: #074b6b;
+  background-image: linear-gradient(160deg, #074b6b 0%, #083c55 100%);
+}
+
+.product:hover a {
+  color: #083c55;
+}
+
+.section-newsletter {
+  background: var(--primary);
+  padding: 4rem 0;
+}
+
+.form-container {
+  background: var(--offWhite);
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.form-container {
+  box-shadow: 4px 4px 7px rgba(80, 80, 80, 0.493);
+}
+
+.newsletter-form input {
+  font-family: "tommy-regular";
+  font-size: 0.9em;
+}
+
+.newsletter-form label {
+  font-family: "tommy-bold";
+  color: var(--gray);
+  font-size: 1.3em;
+}
+
+.newsletter-form h2 {
+  color: var(--secondary);
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.newsletter-form input {
+  border-radius: 10rem;
+  border: 2px solid #c2c2c2;
+  background: var(--lightGray);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.newsletter-icon-container {
+  background: var(--tertiary);
+  height: 100%;
+  padding: 5rem 2rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.form-data-container {
+  padding: 3rem 0;
+}
+
+.form-data-container p {
+  color: var(--gray);
+  font-size: 1.3em;
+  line-height: 1.5rem;
+  width: 70%;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.indicates-required {
+  font-family: "tommy-regular";
+  color: rgb(216, 63, 63);
+  margin-top: 0.5rem;
+}
+
+.form-data-container p.form-disclaimer {
+  color: #a9a9a9;
+  line-height: 1rem;
+  font-size: 0.7em;
+  margin-top: 1rem;
+}
+
+.form-data-container input[type="submit"] {
+  color: var(--offWhite);
+  background: var(--secondary);
+  border: none;
+  font-family: "tommy-bold";
+  font-size: 1.4em;
+  padding: 0.3rem 2rem;
+}
