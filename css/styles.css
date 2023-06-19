@@ -57,6 +57,9 @@ nav {
   box-shadow: 0px 1px 10px #00000071;
 }
 
+footer:not(.testimonial-author) {
+  background: #084260;
+}
 .round-btn {
   border-radius: 10rem;
 }
@@ -72,8 +75,8 @@ nav li {
   align-items: flex-end;
 }
 
-nav li a:link,
-nav li a:visited {
+.nav-link:link,
+.nav-link:visited {
   color: var(--gray);
   margin: 0 2rem;
   position: relative;
@@ -81,7 +84,7 @@ nav li a:visited {
   font-size: 1.1em;
 }
 
-nav li a:before {
+.nav-link:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -96,17 +99,21 @@ nav li a:before {
   transition: opacity 0.3s ease;
 }
 
-nav li a:hover::before {
+.nav-link:hover::before {
   opacity: 1;
 }
 
-nav li a.active:before {
+.nav-link.active:before {
   opacity: 1;
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
+}
+
+.navbar-nav {
+  height: 100%;
 }
 .contact-btn:link,
 .contact-btn:visited {
@@ -116,7 +123,7 @@ nav li a.active:before {
   color: var(--offWhite);
 }
 
-header {
+.header-index {
   background: url("/assets/img/BANNER-INICIO-WEB-MARIBEL.jpg");
   background-position: center;
   background-size: cover;
@@ -124,20 +131,20 @@ header {
   color: var(--offWhite);
 }
 
-header .row {
+.header-index .row {
   padding: 8rem 0;
 }
 
-header h1 {
+.header-index h1 {
   font-family: "tommy-bold";
   font-size: 3.5em;
 }
 
-header h1 span {
+.header-index h1 span {
   font-size: 1.3em;
 }
 
-header p {
+.header-index p {
   font-size: 2.3em;
 }
 
@@ -205,21 +212,47 @@ header p {
   margin: 1.5rem 7rem 0 0;
 }
 
-.section-cotization {
+.section-quotation {
   padding-bottom: 7rem;
 }
-.section-cotization h2 {
+
+#card-carousel,
+#card-carousel-track {
+  width: 85%;
+  margin: 0 auto;
+}
+#card-carousel-list li {
+  padding: 0 1rem;
+}
+
+#card-carousel .splide__pagination {
+  bottom: 0;
+  padding: 2rem 0 0 0;
+  position: relative;
+}
+.splide__pagination__page.is-active {
+  background: #3d3d3d;
+}
+.quotation-img-container img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.section-quotation h2 {
   color: var(--primary);
   padding-top: 4rem;
 }
 
-.section-cotization h3 {
+.section-quotation h3 {
   color: var(--secondary);
   font-family: "tommy-bold";
   font-size: 3em;
+  text-align: center;
 }
 
-.section-cotization p {
+.section-quotation p {
   text-align: start;
   color: var(--darkGray);
 }
@@ -448,4 +481,229 @@ header p {
   font-family: "tommy-bold";
   font-size: 1.4em;
   padding: 0.3rem 2rem;
+}
+
+.response {
+  font-family: "tommy-regular";
+  margin-top: 0.5rem;
+}
+
+.response.error {
+  color: rgb(216, 63, 63);
+}
+.site-footer {
+  color: var(--offWhite);
+  text-decoration: none;
+  padding: 4rem 0 1rem 0;
+}
+.site-footer ul {
+  list-style-type: none;
+}
+
+.site-footer ul li {
+  margin: 0.5rem 0;
+}
+.site-footer a:link,
+.site-footer a:visited {
+  color: var(--offWhite);
+  text-decoration: none;
+}
+
+.site-footer a.active {
+  font-family: "tommy-bold";
+}
+
+.site-footer img {
+  width: 45%;
+}
+
+.footer-message {
+  font-size: 2em;
+  line-height: 2.2rem;
+  margin-top: 2rem;
+  font-family: "tommy-bold";
+}
+
+.site-footer h3 {
+  font-family: "tommy-bold";
+}
+@media screen and (max-width: 480px) {
+  .navbar-brand {
+    width: 30%;
+  }
+
+  .navbar-nav {
+    height: auto !important;
+  }
+
+  .navbar-toggler {
+    height: 50%;
+    margin: auto 0;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .nav-link:before {
+    border-radius: 3rem;
+    height: 5px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 1.2em;
+  }
+
+  .header-index {
+    background-position: 40%;
+  }
+
+  .header-index h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .header-index p {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5rem;
+  }
+
+  .book-now-btn:link,
+  .book-now-btn:visited {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 2rem;
+  }
+
+  .section-message {
+    background-position: 100%;
+  }
+  .message-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .section-message p:first-of-type {
+    font-size: 2.5em;
+    line-height: 2.5rem;
+  }
+
+  .section-message p:first-of-type span {
+    display: block;
+    line-height: 3.7rem;
+  }
+
+  .section-message p:nth-of-type(3) {
+    line-height: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.8em;
+  }
+
+  #card-carousel {
+    width: 100%;
+  }
+
+  #card-carousel-track {
+    width: 75%;
+  }
+
+  .section-perks {
+    padding: 4rem 0;
+  }
+
+  .section-perks h2 {
+    padding: 0.3rem 2rem;
+  }
+  .section-perks p.perks-message {
+    font-size: 1.7em;
+    line-height: 1.7rem;
+  }
+  .perk {
+    margin: 0.5rem 0;
+  }
+
+  .testimonial-bubble {
+    font-size: 1em;
+  }
+
+  .testimonial-bubble p {
+    position: relative;
+    z-index: 2;
+  }
+  .testimonial-bubble::after {
+    right: 87%;
+    z-index: 0;
+  }
+
+  .testimonial-author {
+    font-size: 2.5em;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-link {
+    width: 18%;
+  }
+
+  .product svg {
+    width: 50%;
+  }
+
+  .newsletter-icon-container {
+    display: none;
+  }
+
+  .section-newsletter {
+    padding: 4rem 1rem;
+  }
+
+  .newsletter-form {
+    font-size: 0.8em;
+  }
+
+  .mc-field-group {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0.5rem auto;
+  }
+
+  .newsletter-form input {
+    margin-top: 0.2rem;
+  }
+
+  .newsletter-form input[type="submit"] {
+    margin-top: 1rem;
+  }
+
+  .footer-message {
+    text-align: center;
+  }
+
+  .site-footer ul {
+    margin: 2rem 0;
+    /* list-style-type: "-"; */
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .site-footer li {
+    /* padding-left: 1em; */
+    font-size: 1.1em;
+  }
+
+  .site-footer h3 {
+    text-align: center;
+  }
 }

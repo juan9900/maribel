@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>Document</title>
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary pb-0 pt-0">
-    <div class="container-fluid pt-0 align-items-stretch pe-5 ps-5">
+    <div class="container-fluid pt-lg-0 align-items-stretch pe-5 ps-5">
       <a class="navbar-brand p-0" href="#">
         <img src="/assets/img/brand-logo.png" alt="">
       </a>
@@ -19,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto me-auto h-100 align-items-center div2">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto me-auto align-items-center div2">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
@@ -43,9 +44,9 @@
     </div>
   </nav>
 
-  <header>
+  <header class="header-index">
     <div class="row">
-      <div class="col-12 col-lg-5 offset-lg-1">
+      <div class="col-10 offset-1 col-lg-5 offset-lg-1">
         <h1>
           El tiempo no espera, <br>
           <span>protegete y toma la mejor decisión</span>
@@ -59,7 +60,7 @@
   <main>
     <section class="section-message">
       <div class="row">
-        <div class="col-12 col-lg-7 offset-lg-5 ps-4">
+        <div class="col-10 offset-1 col-lg-7 offset-lg-5 ps-lg-4">
           <div class="d-flex justify-content-start flex-column message-container">
             <p>
               "TODOS MIS CLIENTES SE CONVIERTEN <br>
@@ -73,23 +74,85 @@
         </div>
       </div>
     </section>
-    <section class="section-cotization">
+    <section class="section-quotation">
       <h2 class="text-center mb-4">¡Cotiza ahora!</h2>
-      <div class="row">
-        <div class="col-12 col-lg-2 offset-lg-2 text-center">
-          <img src="/assets/img/icons/salud-icon.svg" alt="">
-          <h3>Salud</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.</p>
-        </div>
-        <div class="col-12 col-lg-2 offset-lg-1 text-center">
-          <img src="/assets/img/icons/vida-icon.svg" alt="">
-          <h3>Vida</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.</p>
-        </div>
-        <div class="col-12 col-lg-2 offset-lg-1 text-center">
-          <img src="/assets/img/icons/retiro-icon.svg" alt="">
-          <h3>Retiro</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.</p>
+
+      <div id="card-carousel" class="splide quotation-splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide quotation-item">
+
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/salud-icon.svg" alt="">
+              </div>
+              <h3>Salud</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+
+            <li class="splide__slide quotation-item">
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/vida-icon.svg" alt="">
+
+              </div>
+              <h3>Vida</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+            <li class="splide__slide quotation-item">
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/retiro-icon.svg" alt="">
+
+              </div>
+              <h3>Retiro</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+            <li class="splide__slide quotation-item">
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/viaje-icon.svg" alt="">
+
+              </div>
+              <h3>Asistencia en viajes</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+
+            <li class="splide__slide quotation-item">
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/accidentes-personales.svg" alt="">
+
+              </div>
+              <h3>Accidentes personales</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+            <li class="splide__slide quotation-item">
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/asistencia-funeraria.svg" alt="">
+
+              </div>
+              <h3>Asistencia funeraria</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+            <li class="splide__slide quotation-item">
+              <div class="quotation-img-container">
+                <img src="/assets/img/icons/riesgos-especiales.svg" alt="">
+
+              </div>
+              <h3>Riesgos especiales</h3>
+              <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -98,24 +161,24 @@
         <h2 class="round-btn">Ventajas</h2>
         <p class="perks-message">de contar con un seguro internacional</p>
         <div class="row justify-content-center mt-4">
-          <div class="col-3 text-center">
+          <div class="perk col-lg-3 col-10 text-center">
             <img src="/assets/img/icons/libre-eleccion.svg" alt="">
             <p>Libre elección</p>
           </div>
-          <div class="col-3 text-center">
+          <div class="perk col-lg-3 col-10 text-center">
             <img src="/assets/img/icons/cobertura-mundial.svg" alt="">
             <p>Cobertura Mundial</p>
           </div>
-          <div class="col-3 text-center">
+          <div class="perk col-lg-3 col-10 text-center">
             <img src="/assets/img/icons/portabilidad.svg" alt="">
             <p>Portabilidad</p>
           </div>
-          <div class="row mt-5">
-            <div class="col-3 offset-3 text-center">
+          <div class="row mt-lg-5 justify-content-center justify-content-lg-start">
+            <div class="perk col-lg-3 col-10 offset-lg-3 text-center">
               <img src="/assets/img/icons/reembolso-en-moneda-dura.svg" alt="">
               <p>Reembolso en moneda dura
             </div>
-            <div class="col-3 text-center">
+            <div class="perk col-lg-3 col-10 text-center">
               <img src="/assets/img/icons/asesoria-profesional.svg" alt="">
               <p>Recibirás asesoría profesional durante todo el proceso </p>
             </div>
@@ -131,14 +194,14 @@
         <div class="row mt-4">
           <blockquote class="col-lg-3 col-10 offset-1 offset-lg-2">
             <div class="testimonial-bubble position-relative">
-              <p class="mb-0 pb-4">No solo te ofrece pólizas que se adaptan a tus necesidades, sino que también te brinda una relación de amistad con sus guías y apoyo constantemente.</p>
+              <p class="mb-0 pb-4">"No solo te ofrece pólizas que se adaptan a tus necesidades, sino que también te brinda una relación de amistad con sus guías y apoyo constantemente."</p>
               <img src="/assets/img/icons/clasificacion.png" alt="testimonial clasificacion">
             </div>
             <footer class="pt-3 testimonial-author">Vanessa</footer>
           </blockquote>
           <blockquote class="col-lg-3 col-10 offset-1 offset-lg-2">
             <div class="testimonial-bubble position-relative">
-              <p class="mb-0 pb-4">El verdadero ejemplo de calidad, apoyo y amistad es Maribel de Abreu. Te ofrece un servicio único y personalizado que toda persona debería hacer el esfuerzo de tener.</p>
+              <p class="mb-0 pb-4">"El verdadero ejemplo de calidad, apoyo y amistad es Maribel de Abreu. Te ofrece un servicio único y personalizado que toda persona debería hacer el esfuerzo de tener."</p>
               <img src="/assets/img/icons/clasificacion.png" alt="testimonial clasificacion">
             </div>
             <footer class="pt-3 testimonial-author">
@@ -157,7 +220,7 @@
     <section class="section-products">
       <h2>Productos</h2>
       <div class="row">
-        <div class="product col-lg-2 offset-2 ">
+        <div class="product col-lg-2 col-8 offset-lg-2 offset-2 ">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -192,7 +255,7 @@
             Salud
           </a>
         </div>
-        <div class="product col-lg-2 offset-1 ">
+        <div class="product col-lg-2 col-8 offset-lg-1 offset-2 ">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -278,7 +341,7 @@
             Vida
           </a>
         </div>
-        <div class="product col-lg-2 offset-1 ">
+        <div class="product col-lg-2 col-8 offset-lg-1 offset-2 ">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -348,7 +411,7 @@
       <div class="row">
 
 
-        <div class="product col-lg-2 offset-2">
+        <div class="product col-lg-2 col-8 offset-lg-2 offset-2">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -417,7 +480,7 @@
             Asistencia en viajes
           </a>
         </div>
-        <div class="product col-lg-2 offset-1">
+        <div class="product col-lg-2 col-8 offset-lg-1 offset-2">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -462,7 +525,7 @@
             Accidentes personales
           </a>
         </div>
-        <div class="product col-lg-2 offset-1">
+        <div class="product col-lg-2 col-8 offset-lg-1 offset-2">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -560,7 +623,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="product col-2 offset-2">
+        <div class="product col-lg-2 col-8 offset-2">
           <a href="#">
             <div>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="auto" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -613,11 +676,11 @@
     <section class="section-newsletter row">
       <div class="form-container row p-0 col-lg-6 offset-lg-3 ">
 
-        <div class="col-4 newsletter-icon-container align-items-center justify-content-center d-flex">
+        <div class="col-4 newsletter-icon-container align-items-center justify-content-center d-lg-flex d-none">
           <img src="/assets/img/icons/mail-newsletter.svg" alt="email icon">
         </div>
         <div id="mc_embed_signup " class="col text-center form-data-container">
-          <form action="https://beacons.us12.list-manage.com/subscribe/post?u=d5bad1c1ff57de0d423488676&amp;id=63eb1143f8&amp;f_id=00fa47e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter-form" target="_blank" novalidate>
+          <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter-form" novalidate>
             <div id="mc_embed_signup_scroll">
               <h2>Suscríbete</h2>
               <p>A mi newsletter para recibir tips y consejos sobre seguros</p>
@@ -638,10 +701,12 @@
                 <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
                 <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
               </div>
-              <p class="form-disclaimer">*Al enviarnos tu correo electrónico, autorizas el tratamiento del mismo y envío de información por parte de Maribel Global de Seguros, según la Política de Privacidad y Tratamiento de Información</p>
+              <p class="form-disclaimer">Al enviarnos tu correo electrónico, autorizas el tratamiento del mismo y envío de información por parte de Maribel Global de Seguros, según la Política de Privacidad y Tratamiento de Información.</p>
               <div id="mce-responses" class="clear foot">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
+                <div class="response error" style="display: none;" id="mce-error-response">incorrecto</div>
+                <div class="response" style="display: none;" id="mce-success-response">
+                  correcto
+                </div>
               </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d5bad1c1ff57de0d423488676_63eb1143f8" tabindex="-1" value=""></div>
               <div class="optionalParent">
@@ -654,7 +719,7 @@
           </form>
         </div>
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script type='text/javascript'>
+        <!--<script type='text/javascript'>
           (function($) {
             window.fnames = new Array();
             window.ftypes = new Array();
@@ -666,15 +731,48 @@
             ftypes[2] = 'text';
           }(jQuery));
           var $mcj = jQuery.noConflict(true);
-        </script>
+        </script> -->
       </div>
 
     </section>
   </main>
-  <footer>
+  <footer class="site-footer">
+    <div class="row">
+      <div class="col-lg-3 col-10 offset-1 offset-lg-1 d-lg-block d-flex justify-content-center align-items-center flex-column">
+        <img src="/assets/img/brand-logo-white.png" alt="Global Advisors Insurance Maribel De Abreu Logo">
+        <p class="footer-message">"Mi misión es apoyarte a protegerte a ti y a tu patrimonio"</p>
+      </div>
+      <div class="col-10 offset-1 offset-lg-0 col-lg-5">
+        <ul>
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#">Conoce sobre mí</a></li>
+          <li><a href="#">Cotización</a></li>
+          <li><a href="#">Testimonios</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Quiero ser un agente</a></li>
+          <li><a href="#">Academia Global de Seguros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-10 offset-1 offset-lg-0 col-lg-3">
+        <h3>Síguenos en:</h3>
+        <ul class="d-flex flex-row justify-content-start">
 
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-lg-3 mt-0">
+      <div class="col">
+        <p class="footer-mdn m-0 w-100 text-center pt-2 pb-2">
+          <span id="current-year"></span>, Global Advisors Insurance | Copyright &copy; Desarrollado por <a class="footer-link" target="_blank" href="https://mdnpublicidad.com/">MDN PUBLICIDAD</a>
+        </p>
+      </div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+  <script src="/js/scripts.js"></script>
 </body>
 
 </html>
