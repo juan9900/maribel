@@ -3,7 +3,9 @@ const header = $(".header-content-index");
 var waypoint = new Waypoint({
   element: header,
   handler: function () {
-    $(header).addClass("animate__animated animate__fadeInUp");
+    $(header)
+      .addClass("animate__animated animate__fadeInUp")
+      .removeClass("invisible");
   },
   offset: 400,
 });
