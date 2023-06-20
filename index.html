@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>Document</title>
   <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -46,7 +47,7 @@
 
   <header class="header-index">
     <div class="row">
-      <div class="col-10 offset-1 col-lg-5 offset-lg-1">
+      <div class="col-10 offset-1 col-lg-5 offset-lg-1 header-content-index">
         <h1>
           El tiempo no espera, <br>
           <span>protegete y toma la mejor decisión</span>
@@ -61,14 +62,14 @@
     <section class="section-message">
       <div class="row">
         <div class="col-10 offset-1 col-lg-7 offset-lg-5 ps-lg-4">
-          <div class="d-flex justify-content-start flex-column message-container">
+          <div class="d-flex justify-content-start flex-column message-container invisible">
             <p>
               "TODOS MIS CLIENTES SE CONVIERTEN <br>
               <span>EN MIS AMIGOS"</span>
             </p>
             <p>Te escucho para atender <span>tus necesidades</span> <br>y busco lo que mejor se adapta a ti y tu familia.</p>
             <p>Cuenta con mi apoyo en todo momento para encontrar tu cobertura ideal.</p>
-            <a class="round-btn text-me-btn" href="#">¡Escríbeme!</a>
+            <a class="round-btn text-me-btn" href="#"><img src="/assets/img/icons/whatsapp1.svg" alt="">¡Escríbeme!</a>
           </div>
 
         </div>
@@ -191,7 +192,7 @@
     <section class="section-testimonial">
       <div class="d-flex justify-content-center align-items-center flex-column">
         <h2>Testimonios</h2>
-        <div class="row mt-4">
+        <div class="row mt-4 invisible testimonials-container">
           <blockquote class="col-lg-3 col-10 offset-1 offset-lg-2">
             <div class="testimonial-bubble position-relative">
               <p class="mb-0 pb-4">"No solo te ofrece pólizas que se adaptan a tus necesidades, sino que también te brinda una relación de amistad con sus guías y apoyo constantemente."</p>
@@ -718,20 +719,7 @@
             </div>
           </form>
         </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <!--<script type='text/javascript'>
-          (function($) {
-            window.fnames = new Array();
-            window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
-            fnames[2] = 'LNAME';
-            ftypes[2] = 'text';
-          }(jQuery));
-          var $mcj = jQuery.noConflict(true);
-        </script> -->
+
       </div>
 
     </section>
@@ -754,10 +742,13 @@
           <li><a href="#">Contacto</a></li>
         </ul>
       </div>
-      <div class="col-10 offset-1 offset-lg-0 col-lg-3">
+      <div class="col-10 offset-1 offset-lg-0 col-lg-2">
         <h3>Síguenos en:</h3>
-        <ul class="d-flex flex-row justify-content-start">
-
+        <ul class="ps-0 mt-0 mt-lg-2 d-flex flex-row justify-content-start footer-socials">
+          <li><a target="_blank" href="https://www.facebook.com/maribelglobal/?locale=es_LA"><img src="/assets/img/icons/FACEBOOK.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/maribelglobal/?hl=es"><img src="/assets/img/icons/INSTAGRAM.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/maribel-deabreu/?originalSubdomain=ve"><img src="/assets/img/icons/LINKEDIN.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://twitter.com/Maribelglobal"><img src="/assets/img/icons/TWITTER.svg" alt=""></a></li>
         </ul>
       </div>
     </div>
@@ -772,7 +763,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+  <script src="/js/jquery.waypoints.js"></script>
   <script src="/js/scripts.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

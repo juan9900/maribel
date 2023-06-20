@@ -210,6 +210,17 @@ nav li {
   padding: 0.3rem 1rem;
   align-self: flex-end;
   margin: 1.5rem 7rem 0 0;
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-me-btn img {
+  width: 15%;
+  margin-right: 0.2rem;
 }
 
 .section-quotation {
@@ -448,6 +459,11 @@ nav li {
   border-bottom-left-radius: 1.5rem;
 }
 
+.mce_inline_error {
+  font-family: "tommy-regular";
+  color: rgb(216, 63, 63);
+}
+
 .form-data-container {
   padding: 3rem 0;
 }
@@ -527,9 +543,16 @@ nav li {
 .site-footer h3 {
   font-family: "tommy-bold";
 }
-@media screen and (max-width: 480px) {
+.footer-socials li {
+  flex-basis: 1;
+}
+.footer-socials li a img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
   .navbar-brand {
-    width: 30%;
+    width: 20%;
   }
 
   .navbar-nav {
@@ -556,6 +579,104 @@ nav li {
   .navbar-collapse {
     text-align: center;
     padding-bottom: 1rem;
+  }
+
+  .header-index {
+    background-position: 15%;
+  }
+
+  .header-index p {
+    padding-bottom: 2rem;
+  }
+
+  .section-message {
+    background-position: 100%;
+  }
+
+  .message-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .text-me-btn:visited,
+  .text-me-btn:link {
+    margin: 1rem auto 0 auto;
+    align-self: center;
+    width: 50%;
+  }
+
+  .section-message p:first-of-type {
+    font-size: 2.7em;
+    line-height: 2.5rem;
+  }
+
+  .section-message p:first-of-type span {
+    display: block;
+    line-height: 5rem;
+  }
+
+  .section-message p:nth-of-type(3) {
+    line-height: 1.5rem;
+  }
+  .testimonial-bubble::after {
+    z-index: 0;
+  }
+  .testimonial-bubble p {
+    position: relative;
+    z-index: 2;
+  }
+
+  .testimonial-link {
+    width: 8%;
+  }
+
+  .product svg {
+    width: 60%;
+  }
+
+  .product div {
+    width: 60%;
+  }
+
+  .section-newsletter {
+    padding: 4rem 2rem;
+  }
+
+  .footer-message {
+    text-align: center;
+  }
+
+  .site-footer ul {
+    margin: 2rem 0;
+    /* list-style-type: "-"; */
+    /* text-align: center; */
+    /* padding-left: 0; */
+  }
+
+  .site-footer li {
+    /* padding-left: 1em; */
+    font-size: 1.1em;
+  }
+
+  .site-footer h3 {
+    text-align: center;
+  }
+
+  .footer-socials li a img {
+    width: 50%;
+  }
+
+  .footer-socials li {
+    text-align: center;
+  }
+
+  .site-footer img {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar-brand {
+    width: 30%;
   }
 
   .contact-btn {
@@ -586,20 +707,14 @@ nav li {
   }
 
   .section-message {
-    background-position: 100%;
-  }
-  .message-container {
-    padding-left: 0;
-    text-align: center;
+    padding: 5rem 0;
   }
 
   .section-message p:first-of-type {
-    font-size: 2.5em;
-    line-height: 2.5rem;
+    font-size: 2.3em;
   }
 
   .section-message p:first-of-type span {
-    display: block;
     line-height: 3.7rem;
   }
 
@@ -657,7 +772,11 @@ nav li {
   }
 
   .product svg {
-    width: 50%;
+    width: 70%;
+  }
+
+  .product div {
+    width: 80%;
   }
 
   .newsletter-icon-container {
@@ -686,24 +805,50 @@ nav li {
   .newsletter-form input[type="submit"] {
     margin-top: 1rem;
   }
+}
 
-  .footer-message {
-    text-align: center;
+@media screen and (min-width: 2000px) {
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 1.6em;
   }
 
-  .site-footer ul {
-    margin: 2rem 0;
-    /* list-style-type: "-"; */
-    text-align: center;
-    padding-left: 0;
+  .book-now-btn:link,
+  .book-now-btn:visited {
+    font-size: 2em;
+  }
+  .header-index h1 {
+    font-size: 5em;
+  }
+  .header-index .row {
+    padding: 15rem 0;
   }
 
-  .site-footer li {
-    /* padding-left: 1em; */
-    font-size: 1.1em;
+  .section-message p:first-of-type {
+    font-size: 3.5em;
+  }
+  .section-message p:nth-of-type(2) {
+    font-size: 2.5em;
+    line-height: 2.5rem;
+  }
+  .section-message p:nth-of-type(3) {
+    font-size: 1.8em;
   }
 
-  .site-footer h3 {
-    text-align: center;
+  .text-me-btn:visited,
+  .text-me-btn:link {
+    margin: 3rem 20rem 0 auto;
+    align-self: center;
+    width: 18%;
+    font-size: 1.8em;
+  }
+
+  .newsletter-icon-container img {
+    width: 70%;
+  }
+
+  .testimonial-bubble p {
+    font-size: 1.2em;
+    padding-bottom: 3rem !important;
   }
 }

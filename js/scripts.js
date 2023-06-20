@@ -7,12 +7,19 @@ $(document).ready(function () {
       640: {
         perPage: 1,
       },
+      1024: {
+        perPage: 2,
+      },
     },
+    drag: false,
+    type: "loop",
   }).mount();
 
   const newsletterForm = $("#mc-embedded-subscribe-form");
 
   newsletterForm.on("submit", function (e) {
+    e.preventDefault();
+
     // const formData = new FormData(newsletterForm);
     // console.log(formData);
     const userEmail = $("#mce-EMAIL").val();
@@ -25,12 +32,15 @@ $(document).ready(function () {
       return;
     }
 
+    if (!validateEmail()) {
+      return;
+    }
+
     const data = {
       email: userEmail,
       fname: userName || "",
       lname: userLastName || "",
     };
-    e.preventDefault();
     console.log("enviadp");
     $.ajax({
       type: "GET",
@@ -60,6 +70,10 @@ function validateInput(input) {
   // Create a regular expression that matches only letters.
   const regex = /^[a-zA-Z]+$/;
 
+  if (input === "") {
+    return true;
+  }
+
   // Check if the input matches the regular expression.
   if (!regex.test(input)) {
     // The input contains numbers or special characters.
@@ -82,3 +96,29 @@ function formSuccess() {
     .css("display", "block");
   $("#mce-error-response").css("display", "none");
 }
+
+function validateEmail() {
+  const email = $("#mce-EMAIL").val();
+
+  // Validate the email address.
+  const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]+$/;
+  if (!emailRegex.test(email)) {
+    const errorMessage = `<div class="mce_inline_error mt-1" for="mce-EMAIL">
+      Por favor ingresa un correo válido.</div>`;
+    // Display an error message.
+    if ($(".mce_inline_error").length) {
+    } else {
+      $("#mce-EMAIL").parent().append(errorMessage);
+    }
+    return false;
+  } else {
+    // Clear the error message.
+    console.log("good");
+    $(".mce_inline_error").remove();
+    return true;
+  }
+}
+
+$("#mce-EMAIL").on("keyup", function () {
+  validateEmail();
+});
