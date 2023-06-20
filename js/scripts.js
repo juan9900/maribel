@@ -12,7 +12,7 @@ $(document).ready(function () {
       },
     },
     drag: false,
-    type: "loop",
+    // type: "loop",
   }).mount();
 
   const newsletterForm = $("#mc-embedded-subscribe-form");

@@ -550,6 +550,42 @@ nav li {
   width: 100%;
 }
 
+@media screen and (max-width: 1400px) {
+  .nav-link:link,
+  .nav-link:visited {
+    padding-bottom: 1.6rem;
+  }
+  .header-index {
+    background: url("/assets/img/BANNER-INICIO-SM.jpg");
+    background-position: 0;
+  }
+
+  .header-index h1 {
+    font-size: 3.5em;
+  }
+
+  .section-message {
+    background: url("/assets/img/FONDO-FOTO-MARIBEL-SM.jpg");
+    background-position: 100%;
+  }
+
+  .message-container {
+    padding-left: 2rem;
+  }
+  .text-me-btn:link,
+  .text-me-btn:visited {
+    margin: 0;
+  }
+  .section-perks p {
+    font-size: 1.6em;
+  }
+
+  .footer-message {
+    font-size: 1.5em;
+    line-height: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .navbar-brand {
     width: 20%;
