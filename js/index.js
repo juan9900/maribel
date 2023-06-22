@@ -7,7 +7,7 @@ var waypoint = new Waypoint({
       .addClass("animate__animated animate__fadeInUp")
       .removeClass("invisible");
   },
-  offset: 400,
+  offset: 650,
 });
 
 const messageContainer = $(".message-container");

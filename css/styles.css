@@ -123,6 +123,21 @@ nav li {
   color: var(--offWhite);
 }
 
+.floating-ws {
+  background: var(--whatsappGreen);
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  padding: 0.8rem;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  z-index: 2;
+}
+
+.floating-ws img {
+  width: 100%;
+}
 .header-index {
   background: url("/assets/img/BANNER-INICIO-WEB-MARIBEL.jpg");
   background-position: center;
@@ -137,11 +152,7 @@ nav li {
 
 .header-index h1 {
   font-family: "tommy-bold";
-  font-size: 3.5em;
-}
-
-.header-index h1 span {
-  font-size: 1.3em;
+  font-size: 3.9em;
 }
 
 .header-index p {
@@ -540,6 +551,11 @@ nav li {
   font-family: "tommy-bold";
 }
 
+.footer-mdn a:link,
+.footer-mdn a:visited {
+  text-decoration: underline;
+}
+
 .site-footer h3 {
   font-family: "tommy-bold";
 }
@@ -562,6 +578,7 @@ nav li {
 
   .header-index h1 {
     font-size: 3.5em;
+    line-height: 3.7rem;
   }
 
   .section-message {
@@ -711,6 +728,12 @@ nav li {
   }
 }
 @media screen and (max-width: 480px) {
+  .floating-ws {
+    width: 3.5rem;
+
+    height: 3.5rem;
+    padding: 0.6rem;
+  }
   .navbar-brand {
     width: 30%;
   }
@@ -725,11 +748,13 @@ nav li {
 
   .header-index h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.3em;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   .header-index h1 span {
-    line-height: 2.5rem;
+    font-size: 1em;
   }
 
   .header-index p {
@@ -848,6 +873,11 @@ nav li {
 }
 
 @media screen and (min-width: 2000px) {
+  .floating-ws {
+    width: 8rem;
+    height: 8rem;
+    padding: 1.2rem;
+  }
   .nav-link:link,
   .nav-link:visited {
     font-size: 1.6em;
@@ -862,6 +892,9 @@ nav li {
   }
   .header-index .row {
     padding: 15rem 0;
+  }
+  .header-index h1 span {
+    display: block;
   }
 
   .section-message p:first-of-type {
