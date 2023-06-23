@@ -3,12 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="500px" height="500px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.908;fill-rule:evenodd;clip-rule:evenodd;fill:#86B13E;enable-background:new    ;}
-	.st1{opacity:0.904;fill-rule:evenodd;clip-rule:evenodd;fill:#86B13E;enable-background:new    ;}
-	.st2{opacity:0.864;fill-rule:evenodd;clip-rule:evenodd;fill:#86B13E;enable-background:new    ;}
-	.st3{opacity:0.921;fill-rule:evenodd;clip-rule:evenodd;fill:#86B13E;enable-background:new    ;}
-	.st4{opacity:0.926;fill-rule:evenodd;clip-rule:evenodd;fill:#86B13E;enable-background:new    ;}
-	.st5{opacity:0.866;fill-rule:evenodd;clip-rule:evenodd;fill:#86B13E;enable-background:new    ;}
+	.st0{opacity:0.908;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;enable-background:new    ;}
+	.st1{opacity:0.904;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;enable-background:new    ;}
+	.st2{opacity:0.864;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;enable-background:new    ;}
+	.st3{opacity:0.921;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;enable-background:new    ;}
+	.st4{opacity:0.926;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;enable-background:new    ;}
+	.st5{opacity:0.866;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;enable-background:new    ;}
 </style>
 <g>
 	<path class="st0" d="M237,80.7c52.3-3.6,92.2,16.7,119.5,61c9.2,17.2,14.2,35.5,15,55c0.3,59.3,0.7,118.7,1,178
@@ -20,7 +20,7 @@
 		c3.1-4.8,6.6-9.3,10.5-13.5c8.5-2.2,11.7,1,9.5,9.5c-10.6,10.1-16.6,22.5-18,37c7.6-3.5,15.3-6.9,23-10c0.3-59.3,0.7-118.7,1-178
 		c4.2-52.8,30.7-89.3,79.5-109.5C220.3,84.5,228.7,82.4,237,80.7z M243,93.7c54.4-0.7,91.3,24.3,110.5,75c1.8,6.6,3.2,13.2,4,20
 		c0.8,60.3,0.7,120.7-0.5,181c-70-22.7-140-22.7-210,0c-1.2-60.3-1.3-120.7-0.5-181c7.8-48.4,35.3-79.3,82.5-92.5
-		C233.9,95.7,238.5,94.8,243,93.7z M206,186.2 M230,366.7c63.3-3.1,123,10.1,179,39.5c-104.7,0.7-209.3,0.7-314,0
+		C233.9,95.7,238.5,94.8,243,93.7z M230,366.7c63.3-3.1,123,10.1,179,39.5c-104.7,0.7-209.3,0.7-314,0
 		C137.5,384,182.5,370.8,230,366.7z"/>
 </g>
 <g>

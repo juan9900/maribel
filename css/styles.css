@@ -255,7 +255,7 @@ nav li {
 .splide__pagination__page.is-active {
   background: #3d3d3d;
 }
-.quotation-img-container img {
+.quotation-img-container svg {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -272,11 +272,6 @@ nav li {
   font-family: "tommy-bold";
   font-size: 3em;
   text-align: center;
-}
-
-.section-quotation p {
-  text-align: start;
-  color: var(--darkGray);
 }
 
 .section-perks {
@@ -406,6 +401,7 @@ nav li {
 
 .product path {
   transition: 0.1s ease-in;
+  fill: var(--tertiary);
 }
 .product:hover path {
   fill: var(--offWhite);
@@ -521,10 +517,11 @@ nav li {
 .site-footer {
   color: var(--offWhite);
   text-decoration: none;
-  padding: 4rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .site-footer ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .site-footer ul li {
@@ -545,8 +542,8 @@ nav li {
 }
 
 .footer-message {
-  font-size: 2em;
-  line-height: 2.2rem;
+  font-size: 1.4em;
+  line-height: 1.8rem;
   margin-top: 2rem;
   font-family: "tommy-bold";
 }
@@ -565,6 +562,118 @@ nav li {
 .footer-socials li a img {
   width: 100%;
 }
+/* --------------
+QUOTATION PAGE 
+----------------*/
+.section-quotation .modal-dialog {
+  max-width: 60%;
+}
+
+.modal-product .modal-content {
+  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.2rem;
+}
+.modal-product .modal-header {
+  background: var(--primary);
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.2rem;
+}
+.modal-product .modal-header img {
+  width: 11%;
+}
+.modal-product .modal-title {
+  font-family: "tommy-bold";
+  color: var(--offWhite);
+  font-size: 4em;
+}
+
+.modal-product .modal-content-title {
+  color: var(--secondary);
+  font-family: "tommy-bold";
+  font-size: 2em;
+}
+
+.modal-product .indicates-required {
+  font-family: "tommy-bold";
+  line-height: 1.2rem;
+}
+
+.indicates-required a:link,
+.indicates-required a:visited {
+  color: inherit;
+  font-family: "tommy-bold";
+}
+
+.selected {
+  border-radius: 3rem;
+  border: 2px solid #b3b3b3;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  font-family: "tommy-bold";
+  color: var(--darkGray);
+  background-color: #fff;
+}
+
+.options-container {
+  border-bottom: 2px solid #b3b3b3;
+  border-left: 2px solid #b3b3b3;
+  border-right: 2px solid #b3b3b3;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: var(--darkGray);
+  width: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
+  max-height: 0;
+  order: 1;
+  position: absolute;
+  top: 60%;
+  opacity: 0;
+}
+
+.options-container.active {
+  max-height: 150px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.option,
+.selected {
+  cursor: pointer;
+}
+
+.select-label {
+  font-family: "tommy-bold";
+  color: var(--secondary);
+}
+
+.modal-group .option label {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.modal-group .options-container .option:first-child {
+  padding-top: 1rem;
+}
+.modal-group .options-container .option:last-child {
+  padding-bottom: 0.5rem;
+}
+
+.modal-group .option:hover {
+  background-color: rgba(164, 164, 164, 0.101);
+}
+
+.modal-group .option .radio {
+  display: none;
+}
+
+/* -------------
+MEDIA QUERIES
+--------------- */
 
 @media screen and (max-width: 1400px) {
   .nav-link:link,
@@ -706,9 +815,14 @@ nav li {
     /* padding-left: 0; */
   }
 
-  .site-footer li {
+  .links-row {
+    text-align: center;
+  }
+  .site-footer ul li {
     /* padding-left: 1em; */
     font-size: 1.1em;
+    line-height: 1.2rem;
+    margin: 1.5rem 0;
   }
 
   .site-footer h3 {

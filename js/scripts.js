@@ -1,19 +1,6 @@
 $(document).ready(function () {
   const currentYear = new Date().getFullYear();
   $("#current-year").text(currentYear);
-  new Splide("#card-carousel", {
-    perPage: 3,
-    breakpoints: {
-      640: {
-        perPage: 1,
-      },
-      1024: {
-        perPage: 2,
-      },
-    },
-    drag: false,
-    // type: "loop",
-  }).mount();
 
   const newsletterForm = $("#mc-embedded-subscribe-form");
 
