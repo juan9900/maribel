@@ -570,29 +570,34 @@ QUOTATION PAGE
   max-width: 60%;
 }
 
-.modal-confirmation .modal-header {
+.modal-after-form .modal-header {
   background-color: var(--primary);
   color: var(--offWhite);
   font-family: "tommy-bold";
 }
 
-.modal-confirmation .modal-body {
+.modal-after-form .modal-body {
   padding-bottom: 0;
   color: var(--darkGray);
 }
-.modal-confirmation .modal-footer {
+.modal-after-form .modal-footer {
   border-top: none;
 }
 
-.modal-confirmation .modal-footer button {
+.modal-after-form .modal-footer button {
   background-color: var(--primary);
   border: none;
   font-family: "tommy-bold";
   color: var(--offWhite);
 }
 
-.modal-confirmation .modal-footer button:hover {
+.modal-after-form .modal-footer button:hover {
   background-color: var(--primaryDarker);
+}
+
+.modal-after-form a:link,
+.modal-after-form a:visited {
+  color: var(--darkGray);
 }
 
 .modal-product {
@@ -1079,6 +1084,12 @@ MEDIA QUERIES
     width: 18%;
   }
 
+  .quotation-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .product svg {
     width: 70%;
   }
@@ -1114,7 +1125,7 @@ MEDIA QUERIES
     margin-top: 1rem;
   }
 
-  .modal-confirmation .modal-title {
+  .modal-after-form .modal-title {
     font-size: 1.5em;
     line-height: 1.5rem;
     text-align: center;

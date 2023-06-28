@@ -266,24 +266,27 @@ $(".btn-quote").on("click", function (e) {
 
   formData["_subject"] = "Nueva solicitud de informacion en www.maribel.com";
 
-  // $.ajax({
-  //   method: "POST",
-  //   url: "https://formsubmit.co/ajax/juanluislauretta@gmail.com",
-  //   dataType: "json",
-  //   accepts: "application/json",
-  //   data: formData,
-  //   success: (data) => {
-  //     console.log(data);
-  //   },
-  //   error: (err) => console.log(err),
-  // });
-  console.log($(this).closest(".modal"));
-  $(this).closest(".modal").hide();
-  $(".modal-confirmation").css("display", "block");
+  $.ajax({
+    method: "POST",
+    url: "https://formsubmit.co/ajax/juanluislauretta@gmail.com",
+    dataType: "json",
+    accepts: "application/json",
+    data: formData,
+    success: (data) => {
+      if (data.success) {
+        $(this).closest(".modal").hide();
+        $(".modal-confirmation").css("display", "block");
+      }
+    },
+    error: (err) => {
+      $(this).closest(".modal").hide();
+      $(".modal-error").css("display", "block");
+    },
+  });
 });
 
 $(".btn-close-confirmation").on("click", function () {
-  $(this).closest(".modal-confirmation").css("display", "none");
+  $(this).closest(".modal-after-form").css("display", "none");
   $(".modal-backdrop").remove();
   $("body").removeClass("modal-open").css({
     "padding-right": "auto",
