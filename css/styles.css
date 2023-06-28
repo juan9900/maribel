@@ -38,6 +38,7 @@ h2 {
 
 :root {
   --primary: #f96d00;
+  --primaryDarker: #e46402;
   --secondary: #084260;
   --tertiary: #86b13e;
   --tertiaryDarker: #789e36;
@@ -569,6 +570,41 @@ QUOTATION PAGE
   max-width: 60%;
 }
 
+.modal-confirmation .modal-header {
+  background-color: var(--primary);
+  color: var(--offWhite);
+  font-family: "tommy-bold";
+}
+
+.modal-confirmation .modal-body {
+  padding-bottom: 0;
+  color: var(--darkGray);
+}
+.modal-confirmation .modal-footer {
+  border-top: none;
+}
+
+.modal-confirmation .modal-footer button {
+  background-color: var(--primary);
+  border: none;
+  font-family: "tommy-bold";
+  color: var(--offWhite);
+}
+
+.modal-confirmation .modal-footer button:hover {
+  background-color: var(--primaryDarker);
+}
+
+.modal-product {
+  padding-top: 2rem;
+}
+
+.modal-product .modal-dialog {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .modal-product .modal-content {
   border-top-right-radius: 1.2rem;
   border-top-left-radius: 1.2rem;
@@ -594,6 +630,10 @@ QUOTATION PAGE
   font-size: 2em;
 }
 
+.modal-product .modal-content-title.green {
+  color: var(--tertiary);
+}
+
 .modal-product .indicates-required {
   font-family: "tommy-bold";
   line-height: 1.2rem;
@@ -611,10 +651,14 @@ QUOTATION PAGE
   padding: 0.1rem 0.5rem;
   cursor: pointer;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   font-family: "tommy-bold";
   color: var(--darkGray);
   background-color: #fff;
+}
+
+.selected.active {
+  z-index: 4;
 }
 
 .options-container {
@@ -639,6 +683,7 @@ QUOTATION PAGE
   max-height: 150px;
   opacity: 1;
   overflow-y: scroll;
+  z-index: 3;
 }
 
 .option,
@@ -671,6 +716,39 @@ QUOTATION PAGE
   display: none;
 }
 
+.modal-product input[type="date"],
+.modal-product input[type="text"],
+.modal-product input[type="email"] {
+  border-radius: 3rem;
+  border: 2px solid #b3b3b3;
+  padding: 0.1rem 0.5rem;
+  width: 100%;
+}
+
+.modal-product .btn-footer {
+  background: var(--tertiary);
+  border: none;
+  border-radius: 3rem;
+  font-family: "tommy-bold";
+  color: var(--offWhite);
+}
+
+.modal-product .btn-footer:hover {
+  background: var(--tertiaryDarker);
+}
+
+.duration-container label {
+  margin-right: 0.7rem;
+  font-family: "tommy-bold";
+  color: var(--secondary);
+}
+
+.quotation-item button {
+  background: var(--primary);
+  font-family: "tommy-bold";
+  border: none;
+  margin-top: 1rem;
+}
 /* -------------
 MEDIA QUERIES
 --------------- */
@@ -840,6 +918,57 @@ MEDIA QUERIES
   .site-footer img {
     width: 35%;
   }
+
+  /* QUOTATTION PAGE */
+  .modal-product .modal-dialog {
+    max-width: 90%;
+  }
+
+  .modal-product .modal-title {
+    font-size: 3em;
+    margin-right: 0.5rem;
+  }
+
+  .modal-product .modal-header img {
+    width: 15%;
+  }
+
+  .modal-product .modal-content-title {
+    font-size: 1.5em;
+  }
+
+  .modal-body p {
+    margin-bottom: 0;
+  }
+  .modal-group {
+    margin: 0.5rem 0;
+  }
+  .modal-group p {
+    font-size: 0.95em;
+  }
+
+  .modal-group label {
+    font-size: 0.8em;
+  }
+
+  .modal-product .select-label {
+    font-size: 1.2em;
+  }
+
+  .modal-product .row > div {
+    margin: 0.5rem 0;
+  }
+
+  .modal-product .form-input[type="date"] {
+    text-align: start;
+    color: var(--darkGray);
+    font-family: "tommy-bold";
+    width: 100%;
+    background: transparent;
+    max-width: 100%;
+    -webkit-appearance: textfield;
+    height: 1.9rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .floating-ws {
@@ -983,6 +1112,12 @@ MEDIA QUERIES
 
   .newsletter-form input[type="submit"] {
     margin-top: 1rem;
+  }
+
+  .modal-confirmation .modal-title {
+    font-size: 1.5em;
+    line-height: 1.5rem;
+    text-align: center;
   }
 }
 

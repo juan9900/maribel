@@ -87,9 +87,12 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-salud">
-                +
-              </button>
+              <div class="d-flex flex-row justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-modal" data-bs-target="#modal-salud" data-bs-toggle="modal">
+                  Cotizar
+                </button>
+              </div>
+
 
             </li>
 
@@ -179,6 +182,12 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
+              <div class="d-flex flex-row justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-modal" data-bs-toggle="modal" data-bs-target="#modal-vida">
+                  Cotizar
+                </button>
+              </div>
+
             </li>
             <li class="splide__slide quotation-item">
               <div class="quotation-img-container">
@@ -247,6 +256,10 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
+              <div class="d-flex flex-row justify-content-center align-items-center"><button type="button" class="btn btn-primary btn-modal btn-modal-general" data-product="Retiro" data-bs-toggle="modal" data-bs-target="#modal-general">
+                  Cotizar
+                </button></div>
+
             </li>
             <li class="splide__slide quotation-item">
               <div class="quotation-img-container">
@@ -317,6 +330,8 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
+              <div class="d-flex flex-row justify-content-center align-items-center"><button type="button" class="btn btn-primary btn-modal " data-bs-toggle="modal" data-bs-target="#modal-viajes">Cotizar</button></div>
+
             </li>
 
             <li class="splide__slide quotation-item">
@@ -365,6 +380,11 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
+              <div class="d-flex flex-row justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-modal " data-bs-toggle="modal" data-bs-target="#modal-personales">Cotizar</button>
+              </div>
+
+
             </li>
             <li class="splide__slide quotation-item">
               <div class="quotation-img-container">
@@ -463,6 +483,10 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
+              <div class="d-flex flex-row justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-modal btn-modal-general" data-product="Asistencia funeraria" data-bs-toggle="modal" data-bs-target="#modal-general">Cotizar</button>
+              </div>
+
             </li>
             <li class="splide__slide quotation-item">
               <div class="quotation-img-container">
@@ -512,182 +536,18 @@
               <div>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero eligendi quae doloribus, laboriosam neque laudantium rem veniam! Quisquam, possimus illum harum ipsum quos cum dolor atque fugiat iure. Veniam, iusto.
               </div>
+              <div class="d-flex flex-row justify-content-center align-items-center">
+                <button type="button" class="btn btn-primary btn-modal btn-modal-general" data-product="Riesgos especiales" data-bs-toggle="modal" data-bs-target="#modal-general">Cotizar</button>
+              </div>
+
             </li>
           </ul>
         </div>
       </div>
 
-      <form action="">
-        <label for="user-continent">Continente:</label>
-        <select name="user-continent" id="user-continent">
-          <option value="América" selected>América</option>
-
-          <option value="Europa">Europa</option>
-        </select>
-        <label for="user-country">País</label>
-        <select name="user-country" id="user-country">
-
-        </select>
-        <label class="invisible" id="label-user-state" for="user-state">Estado</label>
-        <select class="invisible" name="user-state" id="user-state">
-          <option value="Amazonas">Amazonas</option>
-          <option value="Anzoátegui">Anzoátegui</option>
-          <option value="Apure">Apure</option>
-          <option value="Aragua">Aragua</option>
-          <option value="Barinas">Barinas</option>
-          <option value="Bolívar">Bolívar</option>
-          <option value="Carabobo">Carabobo</option>
-          <option value="Cojedes">Cojedes</option>
-          <option value="Delta Amacuro">Delta Amacuro</option>
-          <option value="Distrito Capital">Distrito Capital</option>
-          <option value="Falcón">Falcón</option>
-          <option value="Guárico">Guárico</option>
-          <option value="Lara">Lara</option>
-          <option value="Miranda">Miranda</option>
-          <option value="Monagas">Monagas</option>
-          <option value="Nueva Esparta">Nueva Esparta</option>
-          <option value="Portuguesa">Portuguesa</option>
-          <option value="Sucre">Sucre</option>
-          <option value="Táchira">Táchira</option>
-          <option value="Trujillo">Trujillo</option>
-          <option value="Vargas">Vargas</option>
-          <option value="Zulia">Zulia</option>
-
-        </select>
-      </form>
-
-      <div class="modal modal-product d-block" id="modal-salud" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <div>
-                <div class="d-flex flex-row jusity-content-start align-items-center">
-                  <h4 class="modal-title">Salud</h4>
-                  <img src="/assets/img/icons/salud-icon.svg" alt="">
-                </div>
-
-              </div>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h5 class="modal-content-title">Responde las siguientes preguntas:</h5>
-              <div class="modal-group">
-                <div class="row">
-                  <div class="col col-xxl-5 modal-group d-flex">
-                    <p class="me-3">¿Eres diabético?</p>
-                    <div>
-                      <label for="form-diabetico-yes">SÍ</label>
-                      <input type="radio" name="form-diabetico" id="form-diabetico-yes" value="Si">
-                      <label class="ms-2" for="form-diabetico-no">NO</label>
-                      <input type="radio" name="form-diabetico" id="form-diabetico-no" value="no">
-                    </div>
-
-                  </div>
-                  <div class="col modal-group d-flex">
-                    <p class="me-3">¿Estás recibiendo tratamiento de diálisis?</p>
-                    <div>
-                      <label for="form-dialisis-yes">SÍ</label>
-                      <input type="radio" name="form-dialisis" id="form-dialisis-yes" value="Si">
-                      <label class="ms-2" for="form-dialisis-no">NO</label>
-                      <input type="radio" name="form-dialisis" id="form-dialisis-no" value="no">
-                    </div>
-
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col col-xxl-5 modal-group d-flex">
-                    <p class="me-3">¿Eres paciente actual de cáncer?</p>
-                    <div>
-                      <label for="form-cancer-yes">SÍ</label>
-                      <input type="radio" name="form-cancer" id="form-cancer-yes" value="Si">
-                      <label class="ms-2" for="form-cancer-no">NO</label>
-                      <input type="radio" name="form-cancer" id="form-cancer-no" value="no">
-                    </div>
-
-                  </div>
-                  <div class="col modal-group d-flex">
-                    <p class="me-3">¿Tienes una enfermedad cardiovascular en la actualidad?</p>
-                    <div>
-                      <label for="form-cardiovascular-yes">SÍ</label>
-                      <input type="radio" name="form-cardiovascular" id="form-cardiovascular-yes" value="Si">
-                      <label class="ms-2" for="form-cardiovascular-no">NO</label>
-                      <input type="radio" name="form-cardiovascular" id="form-cardiovascular-no" value="no">
-                    </div>
-
-                  </div>
-
-                </div>
-                <p class="indicates-required">*Si tienes alguna de estas enfermedades preexistentes o crónicas, no eres asegurable. Para más información, contáctame vía WhatsApp haciendo click <a target="_blank" href="https://wa.link/ixsmqs">aquí</a>*</p>
-              </div>
-              <div class="modal-group row">
-                <div class="col">
-                  <p class="mb-1 select-label">Continente</p>
-                  <div class="form-continent d-flex flex-column position-relative">
-
-                    <div class="options-container">
-
-                      <div class="option">
-                        <input class="radio" type="radio" name="lorem" id="lorem" value="lorem">
-                        <label for="lorem" id="contact-option-1">América</label>
-                      </div>
-                      <div class="option">
-                        <input class="radio" type="radio" name="lorem2" id="lorem2" value="lorem2">
-                        <label for="lorem2" id="contact-option-2">Europa</label>
-                      </div>
-
-                    </div>
-                    <div class="selected select-placeholder" id="form-continent">América</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <p class="mb-1 select-label">País</p>
-                  <div class="project-type d-flex flex-column position-relative">
-
-                    <div class="options-container">
-
-                      <div class="option">
-                        <input class="radio" type="radio" name="lorem" id="lorem" value="lorem">
-                        <label for="lorem" id="contact-option-1">América</label>
-                      </div>
-                      <div class="option">
-                        <input class="radio" type="radio" name="lorem2" id="lorem2" value="lorem2">
-                        <label for="lorem2" id="contact-option-2">Europa</label>
-                      </div>
-
-                    </div>
-                    <div class="selected select-placeholder">América</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <p class="mb-1 select-label">Continente</p>
-                  <div class="project-type d-flex flex-column position-relative">
-
-                    <div class="options-container">
-
-                      <div class="option">
-                        <input class="radio" type="radio" name="lorem" id="lorem" value="lorem">
-                        <label for="lorem" id="contact-option-1">América</label>
-                      </div>
-                      <div class="option">
-                        <input class="radio" type="radio" name="lorem2" id="lorem2" value="lorem2">
-                        <label for="lorem2" id="contact-option-2">Europa</label>
-                      </div>
-
-                    </div>
-                    <div class="selected select-placeholder">América</div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
 
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </section>
     <footer class="site-footer">
       <div class="row">
@@ -737,8 +597,1157 @@
       </div>
     </footer>
   </main>
+  <div class="modal modal-confirmation " tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">¡Gracias por enviar tu solicitud de cotización!</h5>
+
+        </div>
+        <div class="modal-body">
+          <p>En breve, me pondré en contacto contigo para brindarte una atención personalizada y exploar las mejores opciones de cobertura que se adapten a tus requerimientos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close-confirmation" data-bs-dismiss="modal">Aceptar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-product" id="modal-salud" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <div class="d-flex flex-row jusity-content-start align-items-center">
+              <h4 class="modal-title">Salud</h4>
+              <img src="/assets/img/icons/salud-icon.svg" alt="">
+            </div>
+
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+
+            <h5 class="modal-content-title">Responde las siguientes preguntas:</h5>
+            <div class="modal-group">
+              <div class="row">
+                <div class="col-12 col-xxl-5 modal-group d-flex">
+                  <p class="me-3">¿Eres diabético?</p>
+                  <div>
+                    <label for="form-diabetico-yes">SÍ</label>
+                    <input class="form-input" type="radio" name="diabetico" id="form-diabetico-yes" value="Si">
+                    <label class="ms-xxl-2 ms-2" for="form-diabetico-no">NO</label>
+                    <input class="form-input" type="radio" name="diabetico" checked id="form-diabetico-no" value="No">
+                  </div>
+
+                </div>
+                <div class="col-12 col-xxl-5 modal-group d-flex align-items-center">
+                  <p class="me-xxl-3 col-7">¿Estás recibiendo tratamiento de diálisis?</p>
+                  <div>
+                    <label class="" for="form-dialisis-yes">SÍ</label>
+                    <input class="form-input" type="radio" name="dialisis" id="form-dialisis-yes" value="Si">
+                    <label class="ms-xxl-2 ms-2" for="form-dialisis-no">NO</label>
+                    <input class="form-input" type="radio" name="dialisis" checked="form-dialisis-no" value="No">
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-xxl-5 modal-group d-flex align-items-center">
+                  <p class="me-xxl-3 col-7">¿Eres paciente actual de cáncer?</p>
+                  <div>
+                    <label for="form-cancer-yes">SÍ</label>
+                    <input class="form-input" type="radio" name="cancer" id="form-cancer-yes" value="Si">
+                    <label class="ms-2" for="form-cancer-no">NO</label>
+                    <input class="form-input" checked type="radio" name="cancer" id="form-cancer-no" value="No">
+                  </div>
+
+                </div>
+                <div class="col modal-group d-flex align-items-center">
+                  <p class="me-3 col-8">¿Tienes una enfermedad cardiovascular actualmente?</p>
+                  <div>
+                    <label for="form-cardiovascular-yes">SÍ</label>
+                    <input class="form-input" type="radio" name="cardiovascular" id="form-cardiovascular-yes" value="Si">
+                    <label class="ms-2" for="form-cardiovascular-no">NO</label>
+                    <input class="form-input" type="radio" name="cardiovascular" id="form-cardiovascular-no" value="No" checked>
+                  </div>
+
+                </div>
+
+              </div>
+              <p class="indicates-required">*Si tienes alguna de estas enfermedades preexistentes o crónicas, no eres asegurable. Para más información, contáctame vía WhatsApp haciendo click <a target="_blank" href="https://wa.link/ixsmqs">aquí</a>*</p>
+            </div>
+            <div class="modal-group row">
+              <div class="col-12 col-xxl-3">
+                <p class=" select-label">Continente</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-continent select-placeholder" data-field="continent" id="form-continent">América</div>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-3 offset-xxl-1 country-select">
+                <p class=" select-label">País</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container options-country">
 
 
+
+                  </div>
+                  <div class="selected form-country select-placeholder" data-field="country" id="form-country">Estados Unidos</div>
+                </div>
+              </div>
+              <div class="col-12 col-xxl-3 offset-xxl-1 state-select invisible">
+                <p class=" select-label">Estado</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option state">
+                      <input class="radio" type="radio" name="amazonas" id="state-amazonas" value="amazonas">
+                      <label for="amazonas" id="contact-option-1">Amazonas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="anzoategui" id="anzoategui" value="state-anzoategui">
+                      <label for="anzoategui" id="contact-option-2">Anzoátegui</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="apure" id="apure" value="state-apure">
+                      <label for="apure" id="contact-option-2">Apure</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Aragua" id="Aragua" value="state-Aragua">
+                      <label for="Aragua" id="contact-option-2">Aragua</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="barinas" id="barinas" value="state-barinas">
+                      <label for="barinas" id="contact-option-2">Barinas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="bolivar" id="bolivar" value="state-bolivar">
+                      <label for="bolivar" id="contact-option-2">Bolívar</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Carabobo" id="Carabobo" value="state-Carabobo">
+                      <label for="Carabobo" id="contact-option-2">Carabobo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="cojedes" id="cojedes" value="state-cojedes">
+                      <label for="cojedes" id="contact-option-2">Cojedes</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="delta-amacuro" id="delta-amacuro" value="state-delta-amacuro">
+                      <label for="delta-amacuro" id="contact-option-2">Delta Amacuro</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="distrito-capital" id="distrito-capital" value="state-distrito-capital">
+                      <label for="distrito-capital" id="contact-option-2">Distrito Capital</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="falcon" id="falcon" value="state-falcon">
+                      <label for="falcon" id="contact-option-2">Falcón</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="guarico" id="guarico" value="state-guarico">
+                      <label for="guarico" id="contact-option-2">Guárico</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="lara" id="lara" value="state-lara">
+                      <label for="lara" id="contact-option-2">Lara</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="miranda" id="miranda" value="state-miranda">
+                      <label for="miranda" id="contact-option-2">Miranda</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="monagas" id="monagas" value="state-monagas">
+                      <label for="monagas" id="contact-option-2">Monagas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="nueva-esparta" id="nueva-esparta" value="state-nueva-esparta">
+                      <label for="nueva-esparta" id="contact-option-2">Nueva Esparta</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="portuguesa" id="portuguesa" value="state-portuguesa">
+                      <label for="portuguesa" id="contact-option-2">Portuguesa</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="sucre" id="sucre" value="state-sucre">
+                      <label for="sucre" id="contact-option-2">Sucre</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="tachira" id="tachira" value="state-tachira">
+                      <label for="tachira" id="contact-option-2">Táchira</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="trujillo" id="trujillo" value="state-trujillo">
+                      <label for="trujillo" id="contact-option-2">Trujillo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="vargas" id="vargas" value="state-vargas">
+                      <label for="vargas" id="contact-option-2">Vargas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="zulia" id="zulia" value="state-zulia">
+                      <label for="zulia" id="contact-option-2">Zulia</label>
+                    </div>
+                  </div>
+
+
+                  <div class="selected form-state select-placeholder" data-field="state" id="form-state">Amazonas</div>
+                </div>
+              </div>
+            </div>
+            <div class="row modal-group mt-xxl-4">
+              <div class="col-12 col-xxl-3">
+                <p class=" select-label">Fecha de nacimiento</p>
+
+                <input class="form-input" type="date" name="birthdate" id="birthdate" value="01/01/1970">
+              </div>
+              <div class="col-12 col-xxl-3 offset-xxl-1">
+                <p class=" select-label">Sexo</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">Masculino</label>
+                    </div>
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Femenino</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-sex select-placeholder" data-field="sex" id="form-sex">Masculino</div>
+                </div>
+              </div>
+            </div>
+            <h5 class="modal-content-title green mt-4">Datos personales:</h5>
+            <div class="modal-group row">
+              <div class="col-12 col-xxl-3">
+                <label class=" select-label" for="form-name">Nombre y apellido</label>
+                <input class="form-input" name="name" type="text">
+              </div>
+              <div class="col-12 col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="form-name">Correo electrónico</label>
+                <input class="form-input" name="email" id="email" type="email">
+              </div>
+              <div class="col-12 col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="phone">Número telefónico</label>
+                <input class="form-input" type="text" id="phone" name="phone">
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-footer" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-footer btn-quote">Cotizar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="modal modal-product" id="modal-vida" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <div class="d-flex flex-row jusity-content-start align-items-center">
+              <h4 class="modal-title">Vida</h4>
+              <img src="/assets/img/icons/vida-icon.svg" alt="">
+            </div>
+
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="
+          ">
+            <div class="modal-group duration-container row">
+              <div class="d-flex flex-row justify-content between align-items-center col col-xxl-3">
+                <label for="duration-plan-permanent">Permanente</label>
+                <input class="form-input" type="radio" name="duration" id="duration-plan-permanent" value="Permanente" checked>
+              </div>
+              <div class="d-flex flex-row justify-content between align-items-center col col-xxl-3">
+                <label for="duration-plan-temporal">Temporal</label>
+                <input class="form-input" type="radio" name="duration" id="duration-plan-temporal" value="Temporal">
+              </div>
+
+
+
+            </div>
+            <div class="modal-group mt-3 row">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Continente</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-continent select-placeholder" data-field="continent" id="form-continent">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 country-select">
+                <p class=" select-label">País</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container options-country">
+
+
+
+                  </div>
+                  <div class="selected form-country select-placeholder" data-field="country" id="form-country">Estados Unidos</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 state-select invisible hello">
+                <p class=" select-label">Estado</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option state">
+                      <input class="radio" type="radio" name="amazonas" id="state-amazonas" value="amazonas">
+                      <label for="amazonas" id="contact-option-1">Amazonas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="anzoategui" id="anzoategui" value="state-anzoategui">
+                      <label for="anzoategui" id="contact-option-2">Anzoátegui</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="apure" id="apure" value="state-apure">
+                      <label for="apure" id="contact-option-2">Apure</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Aragua" id="Aragua" value="state-Aragua">
+                      <label for="Aragua" id="contact-option-2">Aragua</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="barinas" id="barinas" value="state-barinas">
+                      <label for="barinas" id="contact-option-2">Barinas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="bolivar" id="bolivar" value="state-bolivar">
+                      <label for="bolivar" id="contact-option-2">Bolívar</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Carabobo" id="Carabobo" value="state-Carabobo">
+                      <label for="Carabobo" id="contact-option-2">Carabobo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="cojedes" id="cojedes" value="state-cojedes">
+                      <label for="cojedes" id="contact-option-2">Cojedes</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="delta-amacuro" id="delta-amacuro" value="state-delta-amacuro">
+                      <label for="delta-amacuro" id="contact-option-2">Delta Amacuro</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="distrito-capital" id="distrito-capital" value="state-distrito-capital">
+                      <label for="distrito-capital" id="contact-option-2">Distrito Capital</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="falcon" id="falcon" value="state-falcon">
+                      <label for="falcon" id="contact-option-2">Falcón</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="guarico" id="guarico" value="state-guarico">
+                      <label for="guarico" id="contact-option-2">Guárico</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="lara" id="lara" value="state-lara">
+                      <label for="lara" id="contact-option-2">Lara</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="miranda" id="miranda" value="state-miranda">
+                      <label for="miranda" id="contact-option-2">Miranda</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="monagas" id="monagas" value="state-monagas">
+                      <label for="monagas" id="contact-option-2">Monagas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="nueva-esparta" id="nueva-esparta" value="state-nueva-esparta">
+                      <label for="nueva-esparta" id="contact-option-2">Nueva Esparta</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="portuguesa" id="portuguesa" value="state-portuguesa">
+                      <label for="portuguesa" id="contact-option-2">Portuguesa</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="sucre" id="sucre" value="state-sucre">
+                      <label for="sucre" id="contact-option-2">Sucre</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="tachira" id="tachira" value="state-tachira">
+                      <label for="tachira" id="contact-option-2">Táchira</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="trujillo" id="trujillo" value="state-trujillo">
+                      <label for="trujillo" id="contact-option-2">Trujillo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="vargas" id="vargas" value="state-vargas">
+                      <label for="vargas" id="contact-option-2">Vargas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="zulia" id="zulia" value="state-zulia">
+                      <label for="zulia" id="contact-option-2">Zulia</label>
+                    </div>
+                  </div>
+
+
+                  <div class="selected form-state select-placeholder" data-field="state" id="form-state">Amazonas</div>
+                </div>
+              </div>
+            </div>
+            <div class="row modal-group mt-4">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Fecha de nacimiento</p>
+
+                <input class="form-input" type="date" name="birthdate" id="birthdate">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <p class=" select-label">Sexo</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">Masculino</label>
+                    </div>
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Femenino</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-sex select-placeholder" data-field="sex" id="form-sex">Masculino</div>
+                </div>
+              </div>
+            </div>
+            <h5 class="modal-content-title green mt-4">Datos personales:</h5>
+            <div class="modal-group row">
+              <div class="col col-xxl-3">
+                <label class=" select-label" for="form-name">Nombre y apellido</label>
+                <input class="form-input" name="name" type="text">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="form-name">Correo electrónico</label>
+                <input class="form-input" name="email" type="email">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="phone">Número telefónico</label>
+                <input class="form-input" type="text" id="phone" name="phone">
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-footer" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-footer btn-quote">Cotizar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <div class="modal modal-product" id="modal-general" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <div class="d-flex flex-row jusity-content-start align-items-center">
+              <h4 class="modal-title">Vida</h4>
+              <img class="general-img" src="/assets/img/icons/vida-icon.svg" alt="">
+            </div>
+
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+
+            <div class="modal-group mt-3 row">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Continente</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-continent select-placeholder" data-field="continent" id="form-continent">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 country-select">
+                <p class=" select-label">País</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container options-country">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="lorem">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="lorem2">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-country select-placeholder" data-field="country" id="form-country">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 state-select invisible">
+                <p class=" select-label">Estado</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option state">
+                      <input class="radio" type="radio" name="amazonas" id="state-amazonas" value="amazonas">
+                      <label for="amazonas" id="contact-option-1">Amazonas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="anzoategui" id="anzoategui" value="state-anzoategui">
+                      <label for="anzoategui" id="contact-option-2">Anzoátegui</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="apure" id="apure" value="state-apure">
+                      <label for="apure" id="contact-option-2">Apure</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Aragua" id="Aragua" value="state-Aragua">
+                      <label for="Aragua" id="contact-option-2">Aragua</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="barinas" id="barinas" value="state-barinas">
+                      <label for="barinas" id="contact-option-2">Barinas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="bolivar" id="bolivar" value="state-bolivar">
+                      <label for="bolivar" id="contact-option-2">Bolívar</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Carabobo" id="Carabobo" value="state-Carabobo">
+                      <label for="Carabobo" id="contact-option-2">Carabobo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="cojedes" id="cojedes" value="state-cojedes">
+                      <label for="cojedes" id="contact-option-2">Cojedes</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="delta-amacuro" id="delta-amacuro" value="state-delta-amacuro">
+                      <label for="delta-amacuro" id="contact-option-2">Delta Amacuro</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="distrito-capital" id="distrito-capital" value="state-distrito-capital">
+                      <label for="distrito-capital" id="contact-option-2">Distrito Capital</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="falcon" id="falcon" value="state-falcon">
+                      <label for="falcon" id="contact-option-2">Falcón</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="guarico" id="guarico" value="state-guarico">
+                      <label for="guarico" id="contact-option-2">Guárico</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="lara" id="lara" value="state-lara">
+                      <label for="lara" id="contact-option-2">Lara</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="miranda" id="miranda" value="state-miranda">
+                      <label for="miranda" id="contact-option-2">Miranda</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="monagas" id="monagas" value="state-monagas">
+                      <label for="monagas" id="contact-option-2">Monagas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="nueva-esparta" id="nueva-esparta" value="state-nueva-esparta">
+                      <label for="nueva-esparta" id="contact-option-2">Nueva Esparta</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="portuguesa" id="portuguesa" value="state-portuguesa">
+                      <label for="portuguesa" id="contact-option-2">Portuguesa</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="sucre" id="sucre" value="state-sucre">
+                      <label for="sucre" id="contact-option-2">Sucre</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="tachira" id="tachira" value="state-tachira">
+                      <label for="tachira" id="contact-option-2">Táchira</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="trujillo" id="trujillo" value="state-trujillo">
+                      <label for="trujillo" id="contact-option-2">Trujillo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="vargas" id="vargas" value="state-vargas">
+                      <label for="vargas" id="contact-option-2">Vargas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="zulia" id="zulia" value="state-zulia">
+                      <label for="zulia" id="contact-option-2">Zulia</label>
+                    </div>
+                  </div>
+
+
+                  <div class="selected form-state select-placeholder" data-field="state" id="form-state">Amazonas</div>
+                </div>
+              </div>
+            </div>
+            <div class="row modal-group mt-4">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Fecha de nacimiento</p>
+
+                <input class="form-input" type="date" name="birthdate" id="birthdate">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <p class=" select-label">Sexo</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">Masculino</label>
+                    </div>
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Femenino</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-sex select-placeholder form-sex" data-field="sex" id="form-sex">Masculino</div>
+                </div>
+              </div>
+            </div>
+            <h5 class="modal-content-title green mt-4">Datos personales:</h5>
+            <div class="modal-group row">
+              <div class="col col-xxl-3">
+                <label class=" select-label" for="form-name">Nombre y apellido</label>
+                <input class="form-input" type="text" name="name">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="form-name">Correo electrónico</label>
+                <input class="form-input" name="email" type="email">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="phone">Número telefónico</label>
+                <input class="form-input" class="form id=" phone" name="phone" -input" type="text">
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-footer" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-footer btn-quote">Cotizar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="modal modal-product" id="modal-viajes" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <div class="d-flex flex-row jusity-content-start align-items-center">
+              <h4 class="modal-title">Asistencia en viajes</h4>
+              <img src="/assets/img/icons/viaje-icon.svg" alt="">
+            </div>
+
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="
+          ">
+            <div class="modal-group duration-container row">
+              <div class="d-flex flex-row justify-content between align-items-center col col-xxl-3">
+                <label for="travel-plan-dia">Por día</label>
+                <input class="form-input" type="radio" name="duration" id="travel-plan-dia" value="Por día">
+              </div>
+              <div class="d-flex flex-row justify-content between align-items-center col col-xxl-3">
+                <label for="travel-plan-long">Larga estadia</label>
+                <input class="form-input" type="radio" name="duration" id="travel-plan-long" value="Larga estadia" checked>
+              </div>
+
+
+
+            </div>
+            <div class="modal-group mt-3 row">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Continente</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-continent select-placeholder" data-field="continent" id="form-continent">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 country-select">
+                <p class=" select-label">País</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container options-country">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="lorem">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="lorem2">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-country select-placeholder" data-field="country" id="form-country">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 state-select invisible">
+                <p class=" select-label">Estado</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option state">
+                      <input class="radio" type="radio" name="amazonas" id="state-amazonas" value="amazonas">
+                      <label for="amazonas" id="contact-option-1">Amazonas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="anzoategui" id="anzoategui" value="state-anzoategui">
+                      <label for="anzoategui" id="contact-option-2">Anzoátegui</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="apure" id="apure" value="state-apure">
+                      <label for="apure" id="contact-option-2">Apure</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Aragua" id="Aragua" value="state-Aragua">
+                      <label for="Aragua" id="contact-option-2">Aragua</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="barinas" id="barinas" value="state-barinas">
+                      <label for="barinas" id="contact-option-2">Barinas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="bolivar" id="bolivar" value="state-bolivar">
+                      <label for="bolivar" id="contact-option-2">Bolívar</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Carabobo" id="Carabobo" value="state-Carabobo">
+                      <label for="Carabobo" id="contact-option-2">Carabobo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="cojedes" id="cojedes" value="state-cojedes">
+                      <label for="cojedes" id="contact-option-2">Cojedes</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="delta-amacuro" id="delta-amacuro" value="state-delta-amacuro">
+                      <label for="delta-amacuro" id="contact-option-2">Delta Amacuro</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="distrito-capital" id="distrito-capital" value="state-distrito-capital">
+                      <label for="distrito-capital" id="contact-option-2">Distrito Capital</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="falcon" id="falcon" value="state-falcon">
+                      <label for="falcon" id="contact-option-2">Falcón</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="guarico" id="guarico" value="state-guarico">
+                      <label for="guarico" id="contact-option-2">Guárico</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="lara" id="lara" value="state-lara">
+                      <label for="lara" id="contact-option-2">Lara</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="miranda" id="miranda" value="state-miranda">
+                      <label for="miranda" id="contact-option-2">Miranda</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="monagas" id="monagas" value="state-monagas">
+                      <label for="monagas" id="contact-option-2">Monagas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="nueva-esparta" id="nueva-esparta" value="state-nueva-esparta">
+                      <label for="nueva-esparta" id="contact-option-2">Nueva Esparta</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="portuguesa" id="portuguesa" value="state-portuguesa">
+                      <label for="portuguesa" id="contact-option-2">Portuguesa</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="sucre" id="sucre" value="state-sucre">
+                      <label for="sucre" id="contact-option-2">Sucre</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="tachira" id="tachira" value="state-tachira">
+                      <label for="tachira" id="contact-option-2">Táchira</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="trujillo" id="trujillo" value="state-trujillo">
+                      <label for="trujillo" id="contact-option-2">Trujillo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="vargas" id="vargas" value="state-vargas">
+                      <label for="vargas" id="contact-option-2">Vargas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="zulia" id="zulia" value="state-zulia">
+                      <label for="zulia" id="contact-option-2">Zulia</label>
+                    </div>
+                  </div>
+
+
+                  <div class="selected form-state select-placeholder" data-field="state" id="form-state">Amazonas</div>
+                </div>
+              </div>
+            </div>
+            <div class="row modal-group mt-4">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Fecha de nacimiento</p>
+
+                <input class="form-input" type="date" name="birthdate" id="birthdate">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <p class=" select-label">Sexo</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">Masculino</label>
+                    </div>
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Femenino</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-sex select-placeholder" data-field="sex" id="form-sex">Masculino</div>
+                </div>
+              </div>
+            </div>
+            <h5 class="modal-content-title green mt-4">Datos personales:</h5>
+            <div class="modal-group row">
+              <div class="col col-xxl-3">
+                <label class=" select-label" for="form-name">Nombre y apellido</label>
+                <input class="form-input" name="name" type="text">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="form-name">Correo electrónico</label>
+                <input class="form-input" name="email" type="email">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="phone">Número telefónico</label>
+                <input class="form-input" type="text" id="phone" name="phone">
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-footer" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-footer btn-quote">Cotizar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="modal modal-product" id="modal-personales" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <div class="d-flex flex-row jusity-content-start align-items-center">
+              <h4 class="modal-title">Accidentes personales</h4>
+              <img src="/assets/img/icons/accidentes-personales.svg" alt="">
+            </div>
+
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="
+          ">
+            <div class="modal-group duration-container row">
+              <div class="d-flex flex-row justify-content between align-items-center col col-xxl-3">
+                <label for="accident-plan-personal">Personal</label>
+                <input class="form-input" type="radio" name="accident" id="accident-plan-personal" value="personal" checked>
+              </div>
+              <div class="d-flex flex-row justify-content between align-items-center col col-xxl-3">
+                <label for="accident-plan-empresarial">Empresarial</label>
+                <input class="form-input" type="radio" name="accident" id="accident-plan-empresarial" value="empresarial">
+              </div>
+
+
+
+            </div>
+            <div class="modal-group mt-3 row">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Continente</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-continent select-placeholder" data-field="continent" id="form-continent">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 country-select">
+                <p class=" select-label">País</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container options-country">
+
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="lorem">
+                      <label for="lorem" id="contact-option-1">América</label>
+                    </div>
+                    <div class="option">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="lorem2">
+                      <label for="lorem2" id="contact-option-2">Europa</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-country select-placeholder" data-field="country" id="form-country">América</div>
+                </div>
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1 state-select invisible">
+                <p class=" select-label">Estado</p>
+                <div class="project-type d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option state">
+                      <input class="radio" type="radio" name="amazonas" id="state-amazonas" value="amazonas">
+                      <label for="amazonas" id="contact-option-1">Amazonas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="anzoategui" id="anzoategui" value="state-anzoategui">
+                      <label for="anzoategui" id="contact-option-2">Anzoátegui</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="apure" id="apure" value="state-apure">
+                      <label for="apure" id="contact-option-2">Apure</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Aragua" id="Aragua" value="state-Aragua">
+                      <label for="Aragua" id="contact-option-2">Aragua</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="barinas" id="barinas" value="state-barinas">
+                      <label for="barinas" id="contact-option-2">Barinas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="bolivar" id="bolivar" value="state-bolivar">
+                      <label for="bolivar" id="contact-option-2">Bolívar</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="Carabobo" id="Carabobo" value="state-Carabobo">
+                      <label for="Carabobo" id="contact-option-2">Carabobo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="cojedes" id="cojedes" value="state-cojedes">
+                      <label for="cojedes" id="contact-option-2">Cojedes</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="delta-amacuro" id="delta-amacuro" value="state-delta-amacuro">
+                      <label for="delta-amacuro" id="contact-option-2">Delta Amacuro</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="distrito-capital" id="distrito-capital" value="state-distrito-capital">
+                      <label for="distrito-capital" id="contact-option-2">Distrito Capital</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="falcon" id="falcon" value="state-falcon">
+                      <label for="falcon" id="contact-option-2">Falcón</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="guarico" id="guarico" value="state-guarico">
+                      <label for="guarico" id="contact-option-2">Guárico</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="lara" id="lara" value="state-lara">
+                      <label for="lara" id="contact-option-2">Lara</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="miranda" id="miranda" value="state-miranda">
+                      <label for="miranda" id="contact-option-2">Miranda</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="monagas" id="monagas" value="state-monagas">
+                      <label for="monagas" id="contact-option-2">Monagas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="nueva-esparta" id="nueva-esparta" value="state-nueva-esparta">
+                      <label for="nueva-esparta" id="contact-option-2">Nueva Esparta</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="portuguesa" id="portuguesa" value="state-portuguesa">
+                      <label for="portuguesa" id="contact-option-2">Portuguesa</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="sucre" id="sucre" value="state-sucre">
+                      <label for="sucre" id="contact-option-2">Sucre</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="tachira" id="tachira" value="state-tachira">
+                      <label for="tachira" id="contact-option-2">Táchira</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="trujillo" id="trujillo" value="state-trujillo">
+                      <label for="trujillo" id="contact-option-2">Trujillo</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="vargas" id="vargas" value="state-vargas">
+                      <label for="vargas" id="contact-option-2">Vargas</label>
+                    </div>
+                    <div class="option state">
+                      <input class="radio" type="radio" name="zulia" id="zulia" value="state-zulia">
+                      <label for="zulia" id="contact-option-2">Zulia</label>
+                    </div>
+                  </div>
+
+
+                  <div class="selected form-state select-placeholder" data-field="state" id="form-state">Amazonas</div>
+                </div>
+              </div>
+            </div>
+            <div class="row modal-group mt-4">
+              <div class="col col-xxl-3">
+                <p class=" select-label">Fecha de nacimiento</p>
+
+                <input class="form-input" type="date" name="birthdate" id="birthdate">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <p class=" select-label">Sexo</p>
+                <div class=" d-flex flex-column position-relative">
+
+                  <div class="options-container">
+
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem" id="lorem" value="america">
+                      <label for="lorem" id="contact-option-1">Masculino</label>
+                    </div>
+                    <div class="option sex">
+                      <input class="radio" type="radio" name="lorem2" id="lorem2" value="europa">
+                      <label for="lorem2" id="contact-option-2">Femenino</label>
+                    </div>
+
+                  </div>
+                  <div class="selected form-sex select-placeholder" data-field="sex" id="form-sex">Masculino</div>
+                </div>
+              </div>
+            </div>
+            <h5 class="modal-content-title green mt-4">Datos personales:</h5>
+            <div class="modal-group row">
+              <div class="col col-xxl-3">
+                <label class=" select-label" for="form-name">Nombre y apellido</label>
+                <input class="form-input" name="name" type="text">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="form-name">Correo electrónico</label>
+                <input class="form-input" name="email" type="email">
+              </div>
+              <div class="col col-xxl-3 offset-xxl-1">
+                <label class=" select-label" for="phone">Número telefónico</label>
+                <input class="form-input" type="text" id="phone" name="phone">
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-footer" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-footer btn-quote">Cotizar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
