@@ -563,6 +563,7 @@ nav li {
 .footer-socials li a img {
   width: 100%;
 }
+
 /* --------------
 QUOTATION PAGE 
 ----------------*/
@@ -599,11 +600,9 @@ QUOTATION PAGE
 .modal-after-form a:visited {
   color: var(--darkGray);
 }
-
 .modal-product {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
-
 .modal-product .modal-dialog {
   max-width: 60%;
   width: 100%;
@@ -754,6 +753,258 @@ QUOTATION PAGE
   border: none;
   margin-top: 1rem;
 }
+
+.modal-group.big-label-container label {
+  font-size: 1.2em;
+}
+/* -------------
+ACADEMY
+--------------- */
+.main-academy {
+  background: url("/assets/img/FONDO-ACADEMIA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+}
+
+.main-academy section {
+  background: transparent;
+}
+.offer-container {
+  background: var(--primary);
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+}
+
+.offer-container div {
+  flex: 1;
+}
+
+.header-academy {
+  padding-top: 3rem;
+}
+.header-academy h1 {
+  color: var(--secondary);
+  font-family: "tommy-black";
+  font-size: 5em;
+  margin-bottom: 2rem;
+}
+
+.header-academy > p {
+  width: 40%;
+  margin: 0 auto;
+  color: var(--darkGray);
+  font-size: 1.3em;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header-academy > p span {
+  color: var(--primary);
+  font-family: "tommy-bold";
+}
+
+.header-academy h4 {
+  font-family: "tommy-bold";
+  color: var(--secondary);
+  font-size: 2em;
+}
+
+.header-academy .offer p {
+  color: var(--darkGray);
+  font-size: 1.2em;
+}
+
+.header-academy .offer img {
+  margin-bottom: -2rem;
+}
+
+.big-text {
+  font-family: "tommy-bold";
+  color: var(--secondary);
+  font-size: 2em;
+  width: 50%;
+  margin: 2rem auto;
+  line-height: 2.5rem;
+}
+
+.offer-container {
+  color: var(--offWhite);
+  padding: 1.5rem;
+}
+
+.offer-container h3 {
+  font-family: "tommy-bold";
+  text-align: center;
+  font-size: 2.8em;
+}
+
+.cover img {
+  width: 15%;
+}
+
+.cover p {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  line-height: 1.4rem;
+  flex: 1;
+}
+
+.text-compromise {
+  text-align: center;
+  max-width: 40%;
+  margin: 0 auto;
+  color: var(--darkGray);
+  font-size: 1.4em;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+}
+
+.main-academy .form-container {
+  box-shadow: 0px 0px 10px #00000036;
+}
+/* -------------
+BE AN AGENT
+--------------- */
+
+.body-agent {
+  background: url("/assets/img/FONDO-ACADEMIA.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0 70%;
+}
+
+.header-agent {
+  background: url("/assets/img/fondo-header-se-un-agente\ movil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 30rem;
+}
+
+.header-agent h1 {
+  font-family: "tommy-black";
+  color: var(--offWhite);
+  font-size: 4em;
+  line-height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -145%);
+}
+
+.header-agent span {
+  font-size: 1.4em;
+}
+
+.section-benefits > img {
+  width: 20%;
+}
+
+.benefits-p {
+  color: var(--secondary);
+  font-size: 2em;
+}
+.section-benefits > p:nth-of-type(1) {
+  font-family: "tommy-black";
+}
+.section-benefits > p:nth-of-type(2) {
+  font-family: "tommy-bold";
+}
+
+.benefit p {
+  color: var(--darkGray);
+  font-family: "tommy-regular";
+  font-size: 1.2em;
+}
+
+.benefit img {
+  width: 50%;
+}
+.section-become-agent {
+  padding: 5rem 0 10rem 0;
+  text-align: center;
+}
+.btn-agent:link,
+.btn-agent:visited {
+  background: var(--primary);
+  color: var(--offWhite);
+  border-radius: 3rem;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  font-family: "tommy-bold";
+  font-size: 2.5em;
+  margin: 0 auto;
+  transition: all 0.15s ease-in-out;
+  display: block;
+}
+
+.btn-agent:hover {
+  background: var(--primaryDarker);
+}
+/* -------------
+PRODUCTS
+--------------- */
+
+.header-products h1 {
+  font-size: 6em;
+  font-family: "tommy-black";
+  color: var(--primary);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.accordion-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.accordion-button {
+  font-size: 0.35em;
+  font-family: "tommy-bold";
+  color: var(--tertiary);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--offWhite);
+  border-color: #083c55;
+  background-color: #074b6b;
+  background-image: linear-gradient(160deg, #074b6b 0%, #083c55 100%);
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) svg path {
+  fill: var(--offWhite);
+}
+
+.accordion-item svg {
+  width: 6%;
+  margin-left: 1rem;
+}
 /* -------------
 MEDIA QUERIES
 --------------- */
@@ -792,6 +1043,42 @@ MEDIA QUERIES
   .footer-message {
     font-size: 1.5em;
     line-height: 1.8rem;
+  }
+
+  .big-text {
+    width: 70%;
+  }
+
+  .offer-container {
+    max-width: 70%;
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  }
+
+  .header-academy > p {
+    width: 70%;
+  }
+
+  .text-compromise {
+    max-width: 60%;
+  }
+
+  .header-academy .offer p {
+    line-height: 1.4rem;
+  }
+
+  .header-agent h1 {
+    font-size: 5em;
+    transform: translate(-50%, -120%);
+  }
+
+  .section-benefits > img {
+    width: 30%;
+  }
+
+  .btn-agent:visited,
+  .btn-agent:link {
+    display: inline;
+    padding: 0.5rem 2rem;
   }
 }
 
@@ -959,6 +1246,9 @@ MEDIA QUERIES
   .modal-product .select-label {
     font-size: 1.2em;
   }
+  .selected {
+    padding: 0.3rem 0.5rem;
+  }
 
   .modal-product .row > div {
     margin: 0.5rem 0;
@@ -972,7 +1262,122 @@ MEDIA QUERIES
     background: transparent;
     max-width: 100%;
     -webkit-appearance: textfield;
-    height: 1.9rem;
+    height: 2.3rem;
+  }
+
+  .modal-product input[type="date"],
+  .modal-product input[type="text"],
+  .modal-product input[type="email"] {
+    padding: 0.3rem 0.5rem;
+  }
+
+  /* ACADEMY PAGE */
+  .header-academy h1 {
+    font-size: 2.2em;
+    padding-top: 2rem;
+  }
+
+  .header-academy > p {
+    width: 100%;
+  }
+
+  .header-academy h4 {
+    font-size: 1.5em;
+  }
+
+  .header-academy .offer img {
+    margin-bottom: -1rem;
+    width: 50%;
+  }
+
+  .header-academy {
+    padding: 0 2rem;
+  }
+
+  .big-text {
+    font-size: 1.6em;
+    width: 100%;
+    line-height: 1.7rem;
+    padding: 0 1rem;
+  }
+
+  .offer-container {
+    max-width: 90%;
+  }
+
+  .cover {
+    margin: 0.5rem 0;
+  }
+
+  .cover p {
+    font-size: 1.1em;
+  }
+
+  .text-compromise {
+    max-width: 90%;
+  }
+
+  .section-agent-newsletter .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .body-agent {
+    background-position: 0% 100%;
+  }
+
+  .header-agent {
+    min-height: 13rem;
+    background-position: top;
+  }
+
+  .header-agent h1 {
+    position: relative;
+    transform: translate(-50%, 30%);
+    font-size: 2.2em;
+    line-height: 1.8rem;
+  }
+
+  .section-benefits {
+    padding: 0 0.5rem;
+  }
+
+  .section-benefits > img {
+    width: 60%;
+  }
+
+  .benefits-p {
+    font-size: 1.8em;
+    line-height: 1.8rem;
+  }
+
+  .benefit img {
+    width: 30%;
+  }
+
+  .btn-agent:link,
+  .btn-agent:visited {
+    width: 70%;
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.7rem;
+  }
+
+  .header-products h1 {
+    font-size: 3.5em;
+    padding-bottom: 2rem;
+  }
+
+  .accordion-container {
+    max-width: 90%;
+  }
+
+  .accordion-item svg {
+    width: 15%;
+  }
+
+  .accordion-button {
+    font-size: 0.45em;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1130,6 +1535,21 @@ MEDIA QUERIES
     line-height: 1.5rem;
     text-align: center;
   }
+
+  .modal-product .modal-header {
+    padding: 1.3rem 1rem;
+  }
+
+  .modal-product .modal-title {
+    font-size: 2em;
+    margin-right: 0rem;
+    line-height: 2rem;
+  }
+
+  .modal-product .modal-header img {
+    /* width: 50%; */
+    display: none;
+  }
 }
 
 @media screen and (min-width: 2000px) {
@@ -1177,11 +1597,79 @@ MEDIA QUERIES
   }
 
   .newsletter-icon-container img {
-    width: 70%;
+    width: 50%;
   }
 
   .testimonial-bubble p {
     font-size: 1.2em;
     padding-bottom: 3rem !important;
+  }
+
+  .header-academy > p {
+    font-size: 1.5em;
+  }
+
+  .header-academy h4 {
+    font-size: 2.3em;
+  }
+
+  .offer img {
+    width: 80%;
+  }
+
+  .header-academy .offer p {
+    font-size: 1.8em;
+    line-height: 1.7rem;
+  }
+
+  .big-text {
+    font-size: 2.3em;
+  }
+
+  .offer-container h3 {
+    font-size: 3.2em;
+  }
+
+  .cover p {
+    font-size: 2em;
+    line-height: 2.3rem;
+  }
+
+  .cover img {
+    width: 12%;
+  }
+
+  .covers-container > div {
+    margin: 1rem 2rem;
+  }
+
+  .text-compromise {
+    font-size: 1.5em;
+  }
+
+  .header-agent h1 {
+    font-size: 6em;
+    line-height: 5.1rem;
+    transform: translate(-50%, -110%);
+  }
+  .benefits-p {
+    font-size: 2.5em;
+    margin-bottom: 4rem;
+  }
+
+  .benefit p {
+    font-size: 1.6em;
+  }
+
+  .btn-agent:link,
+  .btn-agent:visited {
+    display: inline;
+    padding: 0.5rem 2rem;
+  }
+  .accordion-container {
+    width: 50%;
+  }
+  .accordion-body {
+    font-size: 1.2em;
   }
 }
