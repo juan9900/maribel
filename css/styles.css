@@ -939,6 +939,7 @@ BE AN AGENT
   margin: 0 auto;
   transition: all 0.15s ease-in-out;
   display: block;
+  width: 40%;
 }
 
 .btn-agent:hover {
@@ -1005,6 +1006,80 @@ PRODUCTS
   width: 6%;
   margin-left: 1rem;
 }
+/* -------------
+CONTACT
+--------------- */
+
+.header-contact {
+  background: url("/assets/img/banner-contacto-pw-maribel.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+}
+
+.header-contact h1 {
+  font-size: 4em;
+  font-family: "tommy-black";
+  line-height: 2.5rem;
+  color: var(--offWhite);
+}
+
+.header-contact h1 span:not(.blue) {
+  font-size: 0.6em;
+}
+
+.header-contact h1 span.blue {
+  display: block;
+  padding-top: 0.4rem;
+  color: var(--secondary);
+  font-size: 0.7em;
+}
+
+.section-socials {
+  padding: 5rem 0;
+}
+
+.section-socials > .row:first-of-type {
+  margin-bottom: 0rem;
+}
+
+.contact-social {
+  background: #f3f3f371;
+  margin: 1rem;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.149);
+}
+
+.contact-social a img {
+  display: inline;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+.contact-social > img {
+  width: 25%;
+}
+
+.contact-social a:link,
+.contact-social a:visited,
+.contact-social p {
+  color: var(--darkGray);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-family: "tommy-regular";
+}
+
+.contact-social a:link.blue,
+.contact-social a:visited.blue {
+  color: var(--secondary);
+}
+
 /* -------------
 MEDIA QUERIES
 --------------- */
@@ -1379,6 +1454,26 @@ MEDIA QUERIES
   .accordion-button {
     font-size: 0.45em;
   }
+
+  .header-contact h1 {
+    font-size: 3em;
+    line-height: 2.5rem;
+  }
+
+  .header-contact h1 span:not(.blue) {
+    display: block;
+    line-height: 1.9rem;
+  }
+
+  .header-contact h1 span.blue {
+    line-height: 0;
+    display: block;
+    margin-top: -1.8rem;
+  }
+
+  .section-socials {
+    padding-top: 2rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .floating-ws {
@@ -1671,5 +1766,19 @@ MEDIA QUERIES
   }
   .accordion-body {
     font-size: 1.2em;
+  }
+  .header-contact {
+    padding: 12rem 0;
+  }
+
+  .header-contact h1 {
+    font-size: 7em;
+    line-height: 4rem;
+  }
+
+  .contact-social a:link,
+  .contact-social a:visited,
+  .contact-social p {
+    font-size: 1.7em;
   }
 }
