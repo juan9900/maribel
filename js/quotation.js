@@ -88,7 +88,7 @@ const nameMapping = {
   sex: "Sexo",
   name: "Nombre y apellido",
   email: "Correo electrónico",
-  phone: "Numero telefónico",
+  phone: "Número telefónico",
   duration: "Duración del período",
   accident: "Tipo de seguro",
 };

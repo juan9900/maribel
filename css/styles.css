@@ -326,6 +326,7 @@ nav li {
   padding: 2rem;
   color: var(--darkGray);
   font-size: 1.3em;
+  height: 15rem;
 }
 
 .testimonial-bubble::after {
@@ -770,6 +771,40 @@ ACADEMY
 .main-academy section {
   background: transparent;
 }
+.section-offer h2 {
+  text-align: center;
+  font-size: 3em;
+  color: var(--primary);
+}
+
+.academy-group h3 {
+  text-align: center;
+  font-family: "tommy-bold";
+  color: var(--secondary);
+  line-height: 1.8rem;
+}
+
+.academy-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.academy-group p {
+  font-family: "tommy-regular";
+  color: var(--darkGray);
+  flex: 1;
+  text-align: center;
+}
+
+.section-offer > .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-starts;
+  margin-top: 3rem;
+}
+
 .offer-container {
   background: var(--primary);
   max-width: 60%;
@@ -863,6 +898,39 @@ ACADEMY
 
 .main-academy .form-container {
   box-shadow: 0px 0px 10px #00000036;
+}
+
+.modal-academy .modal-title {
+  font-size: 2.7em;
+}
+
+.modal-academy .row {
+  justify-content: center;
+}
+
+.modal-academy .row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-academy .row > div label {
+  flex: 1;
+  line-height: 1.2rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-academy {
+  background: var(--tertiary);
+  color: var(--offWhite);
+  font-family: "tommy-regular";
+}
+
+.btn-academy:hover {
+  background: var(--tertiaryDarker);
+  color: var(--offWhite);
 }
 /* -------------
 BE AN AGENT
@@ -1055,6 +1123,9 @@ CONTACT
   text-decoration: none;
   color: var(--secondary);
   transition: 0.1s ease-in;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-social:not(.instagram):hover {
@@ -1071,6 +1142,7 @@ CONTACT
 
 .contact-social > img {
   width: 25%;
+  flex: 1;
 }
 
 .contact-social p {
@@ -1089,6 +1161,10 @@ CONTACT
   color: var(--secondary);
   font-size: 1.3em;
   margin-bottom: 0;
+}
+
+.contact-social > img.threads-logo {
+  width: 18.5%;
 }
 
 /* -------------
@@ -1165,6 +1241,14 @@ MEDIA QUERIES
   .btn-agent:link {
     display: inline;
     padding: 0.5rem 2rem;
+  }
+
+  .modal-academy input {
+    margin-bottom: 0.8rem;
+  }
+
+  .modal-academy .row {
+    margin: 0;
   }
 }
 
@@ -1361,6 +1445,10 @@ MEDIA QUERIES
   .header-academy h1 {
     font-size: 2.2em;
     padding-top: 2rem;
+  }
+
+  .academy-group {
+    margin-bottom: 4rem;
   }
 
   .header-academy > p {
@@ -1655,6 +1743,11 @@ MEDIA QUERIES
   .modal-product .modal-header img {
     /* width: 50%; */
     display: none;
+  }
+
+  .header-contact h1 {
+    font-size: 3.5em;
+    line-height: 1rem;
   }
 }
 
